@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
     
     body {
         font-family: 'IBM Plex Mono', sans-serif;
+        margin: 0;
     }
 `;
 
