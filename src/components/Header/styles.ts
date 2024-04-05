@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   background-color: ${(props) => props.theme.colors.background.tertiary};
-  padding: 15px 0;
+  padding: 17px 0;
 `;
 
 export const HeaderNav = styled.nav`
