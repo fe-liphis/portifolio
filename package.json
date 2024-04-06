@@ -2,7 +2,7 @@
   "name": "portifolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "portifolio/",
+  "homepage": "https://fe-liphis.github.io/portifolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
