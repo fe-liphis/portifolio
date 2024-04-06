@@ -1,16 +1,31 @@
+import { useTheme } from "styled-components";
 import profile from "../../assets/profile.jpg";
+import {
+  ProfileIMG,
+  ResumoParagrah,
+  ResumoContainer,
+  ResumoTitulo,
+  Strong,
+} from "./styles";
 
 function Resumo() {
+  const {
+    colors: { text },
+  } = useTheme();
   return (
-    <section>
-      <h1>Resumo</h1>
-      <p>
-        Desenvolvedor de Software com 5 meses de experiência em front-end.
-        Principais habilidades com React.JS, JavaScript, TypeScript e sou
-        certificado Cloud Practitioner AWS.
-      </p>
-      <img src={profile} alt="Foto de Perfil" />
-    </section>
+    <ResumoContainer>
+      <section>
+        <ResumoTitulo>Resumo</ResumoTitulo>
+        <ResumoParagrah>
+          Desenvolvedor de Software com 5 meses de experiência em front-end.
+          Principais habilidades com <Strong color={text.aqua}>React.JS</Strong>
+          , <Strong color={text.yellow}>JavaScript</Strong>,{" "}
+          <Strong color={text.blue}>TypeScript</Strong> e sou certificado{" "}
+          <Strong color={text.orange}>Cloud Practitioner AWS</Strong>.
+        </ResumoParagrah>
+      </section>
+      <ProfileIMG src={profile} alt="Foto de Perfil" />
+    </ResumoContainer>
   );
 }
 
