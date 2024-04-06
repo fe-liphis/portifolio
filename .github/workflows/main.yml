@@ -1,4 +1,4 @@
-name: Build App and Deploy static content to Pages
+name: Build App and Deploy static content to GitHub Pages
 
 on:
   push:
@@ -7,8 +7,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -18,8 +20,10 @@ jobs:
         run: |
           npm ci
           npm run build
+
       - name: Push to dist
         uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
