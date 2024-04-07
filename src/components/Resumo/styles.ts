@@ -25,9 +25,9 @@ export const ResumoTitulo = styled.h1`
 export const ProfileIMG = styled.img`
   width: 400px;
   border-radius: 100%;
-  box-shadow: 10px 12px 5px 0px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 10px 12px 5px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 10px 12px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.19);
 `;
 
 export const Strong = styled.strong`
