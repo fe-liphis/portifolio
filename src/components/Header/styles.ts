@@ -15,6 +15,10 @@ export const HeaderNav = styled.nav`
   align-items: center;
   gap: 50px;
   justify-content: center;
+
+  @media (max-width: 1400px) {
+    gap: 35px;
+  }
 `;
 
 export const HeaderLink = styled.a`
@@ -22,4 +26,8 @@ export const HeaderLink = styled.a`
   color: ${(props) => props.theme.colors.text.principal};
   text-decoration: none;
   font-weight: 400;
+
+  @media (max-width: 1400px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.x};
+  }
 `;

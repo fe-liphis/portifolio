@@ -41,6 +41,14 @@ export const ListItem = styled.li`
 
 export const ListItemIMG = styled.img`
   width: 150px;
+
+  @media (max-width: 1600px) {
+    width: 125px;
+  }
+
+  @media (max-width: 1400px) {
+    width: 100px;
+  }
 `;
 
 export const ListItemLabel = styled.figcaption`
