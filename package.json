@@ -2,7 +2,7 @@
   "name": "portifolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://fe-liphis.com.br/",
+  "homepage": "https://fe-liphis.com.br/",
   "type": "module",
   "scripts": {
     "dev": "vite",
