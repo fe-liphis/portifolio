@@ -128,6 +128,7 @@ Error generating stack: `+o.message+`
   @media (max-width: 1400px) {
     font-size: ${({theme:e})=>e.sizes.text.default.m};
     width: 37ch;
+    line-height: 35px;
   }
 `,a0=me.h1`
   font-size: ${({theme:e})=>e.sizes.text.title.lg};
