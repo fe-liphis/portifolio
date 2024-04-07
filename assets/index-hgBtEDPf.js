@@ -67,6 +67,10 @@ Error generating stack: `+o.message+`
   @media (max-width: 900px) {
     padding: 5% 10%;
   }
+
+  @media (max-width: 768px) {
+    padding: 5% 7.5%;
+  }
 `,Zm=me.ul`
   display: grid;
   grid-template-columns: repeat(4, min-content);
@@ -88,6 +92,10 @@ Error generating stack: `+o.message+`
 
   @media (max-width: 900px) {
     gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, min-content);
   }
 `,Jm=me.li`
   display: flex;
@@ -152,6 +160,10 @@ Error generating stack: `+o.message+`
   @media (max-width: 1400px) {
     font-size: ${({theme:e})=>e.sizes.text.default.x};
   }
+
+  @media (max-width: 1000px) {
+    font-size: ${({theme:e})=>e.sizes.text.default.xx};
+  }
 `;function o0(){return L.jsx(r0,{children:L.jsxs(l0,{children:[L.jsx(sn,{href:"",children:"Resumo"}),L.jsx(sn,{href:"",children:"Habilidades"}),L.jsx(sn,{href:"",children:"Formação"}),L.jsx(sn,{href:"",children:"Experiências"}),L.jsx(sn,{href:"",children:"Projetos"}),L.jsx(sn,{href:"",children:"Contatos"})]})})}const i0="/assets/profile-Eyq6xLAY.jpg",u0=me.article`
   display: flex;
   align-items: center;
@@ -166,6 +178,11 @@ Error generating stack: `+o.message+`
 
   @media (max-width: 900px) {
     padding: 5% 10%;
+    padding-top: calc(5% + 40px);
+  }
+
+  @media (max-width: 768px) {
+    padding: 5% 7.5%;
     padding-top: calc(5% + 40px);
   }
 `,s0=me.p`
@@ -192,7 +209,7 @@ Error generating stack: `+o.message+`
   @media (max-width: 1000px) {
     font-size: ${({theme:e})=>e.sizes.text.default.x};
     width: 30ch;
-    line-height: 30px;
+    line-height: 27.5px;
   }
 `,a0=me.h1`
   font-size: ${({theme:e})=>e.sizes.text.title.lg};
@@ -230,6 +247,10 @@ Error generating stack: `+o.message+`
 
   @media (max-width: 1180px) {
     width: 200px;
+  }
+
+  @media (max-width: 768px) {
+    width: 175px;
   }
 `,il=me.strong`
   color: ${e=>e.color};
