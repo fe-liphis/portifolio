@@ -22,6 +22,7 @@ export const ResumoParagrah = styled.p`
   @media (max-width: 1400px) {
     font-size: ${({ theme }) => theme.sizes.text.default.m};
     width: 37ch;
+    line-height: 35px;
   }
 `;
 
