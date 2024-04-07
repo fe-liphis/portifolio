@@ -51,7 +51,7 @@ Error generating stack: `+o.message+`
   color: ${e=>e.theme.colors.text.principal};
   text-decoration: none;
   font-weight: 400;
-`;function Mm(){return M.jsx(Fm,{children:M.jsxs(Dm,{children:[M.jsx(sn,{href:"",children:"Resumo"}),M.jsx(sn,{href:"",children:"Habilidades"}),M.jsx(sn,{href:"",children:"Formação"}),M.jsx(sn,{href:"",children:"Experiências"}),M.jsx(sn,{href:"",children:"Projetos"}),M.jsx(sn,{href:"",children:"Contatos"})]})})}const Am="/portifolio/assets/profile-Eyq6xLAY.jpg",Um=ct.article`
+`;function Mm(){return M.jsx(Fm,{children:M.jsxs(Dm,{children:[M.jsx(sn,{href:"",children:"Resumo"}),M.jsx(sn,{href:"",children:"Habilidades"}),M.jsx(sn,{href:"",children:"Formação"}),M.jsx(sn,{href:"",children:"Experiências"}),M.jsx(sn,{href:"",children:"Projetos"}),M.jsx(sn,{href:"",children:"Contatos"})]})})}const Am="/assets/profile-Eyq6xLAY.jpg",Um=ct.article`
   display: flex;
   align-items: center;
   justify-content: space-between;
