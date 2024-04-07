@@ -31,6 +31,10 @@ export const HabilidadesSection = styled.section`
   @media (max-width: 900px) {
     padding: 5% 10%;
   }
+
+  @media (max-width: 768px) {
+    padding: 5% 7.5%;
+  }
 `;
 
 export const ListWrapper = styled.ul`
@@ -54,6 +58,10 @@ export const ListWrapper = styled.ul`
 
   @media (max-width: 900px) {
     gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, min-content);
   }
 `;
 

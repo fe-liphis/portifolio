@@ -16,6 +16,11 @@ export const ResumoContainer = styled.article`
     padding: 5% 10%;
     padding-top: calc(5% + 40px);
   }
+
+  @media (max-width: 768px) {
+    padding: 5% 7.5%;
+    padding-top: calc(5% + 40px);
+  }
 `;
 
 export const ResumoParagrah = styled.p`
@@ -42,7 +47,7 @@ export const ResumoParagrah = styled.p`
   @media (max-width: 1000px) {
     font-size: ${({ theme }) => theme.sizes.text.default.x};
     width: 30ch;
-    line-height: 30px;
+    line-height: 27.5px;
   }
 `;
 
@@ -84,6 +89,10 @@ export const ProfileIMG = styled.img`
 
   @media (max-width: 1180px) {
     width: 200px;
+  }
+
+  @media (max-width: 768px) {
+    width: 175px;
   }
 `;
 

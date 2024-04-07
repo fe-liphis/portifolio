@@ -34,4 +34,8 @@ export const HeaderLink = styled.a`
   @media (max-width: 1400px) {
     font-size: ${({ theme }) => theme.sizes.text.default.x};
   }
+
+  @media (max-width: 1000px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.xx};
+  }
 `;
