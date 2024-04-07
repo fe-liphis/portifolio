@@ -3,6 +3,37 @@ import styled from "styled-components";
 export const HabilidadesTitulo = styled.h2`
   font-size: ${({ theme }) => theme.sizes.text.title.lg};
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.text.principal};
-  margin-bottom: 15px;
+  color: ${({ theme }) => theme.colors.text.secondary};
+  text-align: end;
+  margin-bottom: 5%;
+`;
+
+export const HabilidadesSection = styled.section`
+  background-color: ${({ theme }) => theme.colors.background.secondary};
+  padding: 5% 15%;
+`;
+
+export const ListWrapper = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+`;
+
+export const ListItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: ${({ theme }) => theme.colors.background.quaternary};
+`;
+
+export const ListItemIMG = styled.img``;
+
+export const ListItemLabel = styled.figcaption`
+  font-size: 24px;
+  font-weight: bold;
 `;

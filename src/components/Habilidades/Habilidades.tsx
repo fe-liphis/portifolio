@@ -1,11 +1,12 @@
 import List from "./List";
+import { HabilidadesSection, HabilidadesTitulo } from "./styles";
 
 function Habilidades() {
   return (
-    <section>
-      <h2>Habilidades</h2>
+    <HabilidadesSection>
+      <HabilidadesTitulo>Habilidades</HabilidadesTitulo>
       <List />
-    </section>
+    </HabilidadesSection>
   );
 }
 

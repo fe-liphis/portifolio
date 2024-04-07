@@ -4,7 +4,7 @@ export const ResumoContainer = styled.article`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 5% 15%;
+  padding: 5% 15%;
 `;
 
 export const ResumoParagrah = styled.p`

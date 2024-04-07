@@ -10,8 +10,9 @@ import githubIMG from "../../assets/habilidades-icons/github.svg";
 import vitestIMG from "../../assets/habilidades-icons/vitest.svg";
 import sqlIMG from "../../assets/habilidades-icons/sql.svg";
 import javaIMG from "../../assets/habilidades-icons/java.svg";
+import { ListItem, ListItemIMG, ListItemLabel, ListWrapper } from "./styles";
 
-type HabilidadesArray = [{ src: string; name: string }];
+type HabilidadesArray = Array<{ src: string; name: string }>;
 
 const habilidades: HabilidadesArray = [
   {
@@ -66,14 +67,17 @@ const habilidades: HabilidadesArray = [
 
 function List() {
   return (
-    <ul>
+    <ListWrapper>
       {habilidades.map((habilidade) => (
-        <li key={habilidade.name}>
-          <img src={habilidade.src} alt={`Habilidade com ${habilidade.name}`} />
-          <figcaption>{habilidade.name}</figcaption>
-        </li>
+        <ListItem key={habilidade.name}>
+          <ListItemIMG
+            src={habilidade.src}
+            alt={`Habilidade com ${habilidade.name}`}
+          />
+          <ListItemLabel>{habilidade.name}</ListItemLabel>
+        </ListItem>
       ))}
-    </ul>
+    </ListWrapper>
   );
 }
 
