@@ -6,6 +6,14 @@ export const HabilidadesTitulo = styled.h2`
   color: ${({ theme }) => theme.colors.text.secondary};
   text-align: end;
   margin-bottom: 5%;
+
+  @media (max-width: 1600px) {
+    font-size: 70px;
+  }
+
+  @media (max-width: 1400px) {
+    font-size: ${({ theme }) => theme.sizes.text.title.m};
+  }
 `;
 
 export const HabilidadesSection = styled.section`
