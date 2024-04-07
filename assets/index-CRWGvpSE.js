@@ -61,7 +61,9 @@ Error generating stack: `+o.message+`
   padding: 20px;
   border-radius: 20px;
   background-color: ${({theme:e})=>e.colors.background.quaternary};
-`,qm=me.img``,bm=me.figcaption`
+`,qm=me.img`
+  width: 150px;
+`,bm=me.figcaption`
   font-size: 24px;
   font-weight: bold;
 `,e0=[{src:jh,name:"HTML"},{src:Oh,name:"CSS"},{src:Fh,name:"JavaScript"},{src:Mh,name:"React.JS"},{src:Dh,name:"TypeScript"},{src:Ah,name:"Next.JS"},{src:Uh,name:"AWS"},{src:Bh,name:"Git"},{src:Hh,name:"GitHub"},{src:Vh,name:"Vitest"},{src:Wh,name:"SQL"},{src:Qh,name:"Java"}];function t0(){return L.jsx(Zm,{children:e0.map(e=>L.jsxs(Jm,{children:[L.jsx(qm,{src:e.src,alt:`Habilidade com ${e.name}`}),L.jsx(bm,{children:e.name})]},e.name))})}function n0(){return L.jsxs(Xm,{children:[L.jsx(Ym,{children:"Habilidades"}),L.jsx(t0,{})]})}const r0=me.header`
