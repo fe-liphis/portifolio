@@ -31,7 +31,9 @@ export const ListItem = styled.li`
   background-color: ${({ theme }) => theme.colors.background.quaternary};
 `;
 
-export const ListItemIMG = styled.img``;
+export const ListItemIMG = styled.img`
+  width: 150px;
+`;
 
 export const ListItemLabel = styled.figcaption`
   font-size: 24px;
