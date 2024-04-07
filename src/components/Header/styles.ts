@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
   background-color: ${(props) => props.theme.colors.background.tertiary};
   padding: 17.5px 0;
+  position: fixed;
+  width: 100%;
 `;
 
 export const HeaderNav = styled.nav`
