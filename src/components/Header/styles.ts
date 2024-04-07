@@ -5,6 +5,9 @@ export const HeaderContainer = styled.header`
   padding: 17.5px 0;
   position: fixed;
   width: 100%;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.4);
 `;
 
 export const HeaderNav = styled.nav`
