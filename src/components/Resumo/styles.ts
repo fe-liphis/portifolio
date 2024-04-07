@@ -6,6 +6,16 @@ export const ResumoContainer = styled.article`
   justify-content: space-between;
   padding: 5% 15%;
   padding-top: calc(5% + 40px);
+
+  @media (max-width: 1400px) {
+    padding: 5% 12.5%;
+    padding-top: calc(5% + 40px);
+  }
+
+  @media (max-width: 900px) {
+    padding: 5% 10%;
+    padding-top: calc(5% + 40px);
+  }
 `;
 
 export const ResumoParagrah = styled.p`
@@ -24,6 +34,16 @@ export const ResumoParagrah = styled.p`
     width: 37ch;
     line-height: 35px;
   }
+
+  @media (max-width: 1180px) {
+    width: 30ch;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.x};
+    width: 30ch;
+    line-height: 30px;
+  }
 `;
 
 export const ResumoTitulo = styled.h1`
@@ -38,6 +58,12 @@ export const ResumoTitulo = styled.h1`
 
   @media (max-width: 1400px) {
     font-size: ${({ theme }) => theme.sizes.text.title.m};
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: ${({ theme }) => theme.sizes.text.title.x};
+    margin-bottom: 5px;
   }
 `;
 
@@ -54,6 +80,10 @@ export const ProfileIMG = styled.img`
 
   @media (max-width: 1400px) {
     width: 250px;
+  }
+
+  @media (max-width: 1180px) {
+    width: 200px;
   }
 `;
 

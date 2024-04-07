@@ -19,6 +19,10 @@ export const HeaderNav = styled.nav`
   @media (max-width: 1400px) {
     gap: 35px;
   }
+
+  @media (max-width: 1000px) {
+    gap: 20px;
+  }
 `;
 
 export const HeaderLink = styled.a`
