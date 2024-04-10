@@ -35,6 +35,15 @@ export const HeaderNav = styled.nav.attrs<{ $isOpen: boolean }>((props) => ({
   @media (max-width: 768px) {
     display: ${(props) => (props.$isOpen ? "flex" : "none")};
   }
+
+  @media (max-width: 700px) {
+    gap: 15px;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 export const HeaderLink = styled.a`
@@ -53,7 +62,14 @@ export const HeaderLink = styled.a`
 
   @media (max-width: 768px) {
     color: ${({ theme }) => theme.colors.text.principal};
-    font-weight: bold;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.xx};
   }
 `;
 
@@ -67,5 +83,9 @@ export const MenuButton = styled.button`
 
   @media (max-width: 768px) {
     display: block;
+  }
+
+  @media (max-width: 700px) {
+    font-size: ${(props) => props.theme.sizes.text.default.x};
   }
 `;
