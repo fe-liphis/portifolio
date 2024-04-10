@@ -11,7 +11,11 @@ function Header() {
   return (
     <>
       <HeaderContainer>
-        <MenuButton onClick={handleOnClickMenu}>MENU</MenuButton>
+        {menuIsOpen ? (
+          <MenuButton onClick={handleOnClickMenu}>X</MenuButton>
+        ) : (
+          <MenuButton onClick={handleOnClickMenu}>MENU</MenuButton>
+        )}
         <HeaderNav $isOpen={menuIsOpen}>
           <HeaderLink href="">Resumo</HeaderLink>
           <HeaderLink href="">Habilidades</HeaderLink>

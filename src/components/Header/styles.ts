@@ -8,6 +8,12 @@ export const HeaderContainer = styled.header`
   box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.4);
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 export const HeaderNav = styled.nav.attrs<{ $isOpen: boolean }>((props) => ({
@@ -27,7 +33,7 @@ export const HeaderNav = styled.nav.attrs<{ $isOpen: boolean }>((props) => ({
   }
 
   @media (max-width: 768px) {
-    display: ${(props) => (props.$isOpen ? "block" : "none")};
+    display: ${(props) => (props.$isOpen ? "flex" : "none")};
   }
 `;
 
@@ -43,6 +49,11 @@ export const HeaderLink = styled.a`
 
   @media (max-width: 1000px) {
     font-size: ${({ theme }) => theme.sizes.text.default.xx};
+  }
+
+  @media (max-width: 768px) {
+    color: ${({ theme }) => theme.colors.text.principal};
+    font-weight: bold;
   }
 `;
 
