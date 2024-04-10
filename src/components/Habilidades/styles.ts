@@ -18,6 +18,11 @@ export const HabilidadesTitulo = styled.h2`
   @media (max-width: 1000px) {
     font-size: ${({ theme }) => theme.sizes.text.title.x};
   }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-bottom: 7.5%;
+  }
 `;
 
 export const HabilidadesSection = styled.section`
@@ -33,7 +38,7 @@ export const HabilidadesSection = styled.section`
   }
 
   @media (max-width: 768px) {
-    padding: 5% 7.5%;
+    padding: 7.5%;
   }
 `;
 
@@ -62,6 +67,10 @@ export const ListWrapper = styled.ul`
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(3, min-content);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(2, min-content);
   }
 `;
 
