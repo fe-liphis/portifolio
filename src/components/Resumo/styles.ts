@@ -18,8 +18,10 @@ export const ResumoContainer = styled.article`
   }
 
   @media (max-width: 768px) {
-    padding: 5% 7.5%;
-    padding-top: calc(5% + 40px);
+    padding: 7.5%;
+    padding-top: calc(7.5% + 40px);
+    flex-direction: column-reverse;
+    gap: 20px;
   }
 `;
 
@@ -69,6 +71,11 @@ export const ResumoTitulo = styled.h1`
   @media (max-width: 1000px) {
     font-size: ${({ theme }) => theme.sizes.text.title.x};
     margin-bottom: 5px;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-bottom: 20px;
   }
 `;
 
