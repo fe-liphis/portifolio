@@ -23,6 +23,10 @@ export const HeaderNav = styled.nav`
   @media (max-width: 1000px) {
     gap: 20px;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const HeaderLink = styled.a`
@@ -37,5 +41,13 @@ export const HeaderLink = styled.a`
 
   @media (max-width: 1000px) {
     font-size: ${({ theme }) => theme.sizes.text.default.xx};
+  }
+`;
+
+export const MenuButton = styled.button`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
   }
 `;

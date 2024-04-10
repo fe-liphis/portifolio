@@ -1,8 +1,9 @@
-import { HeaderContainer, HeaderLink, HeaderNav } from "./styles";
+import { HeaderContainer, HeaderLink, HeaderNav, MenuButton } from "./styles";
 
 function Header() {
   return (
     <HeaderContainer>
+      <MenuButton>MENU</MenuButton>
       <HeaderNav>
         <HeaderLink href="">Resumo</HeaderLink>
         <HeaderLink href="">Habilidades</HeaderLink>
