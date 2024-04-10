@@ -23,6 +23,10 @@ export const HabilidadesTitulo = styled.h2`
     text-align: center;
     margin-bottom: 7.5%;
   }
+
+  @media (max-width: 425px) {
+    font-size: ${({ theme }) => theme.sizes.text.title.xx};
+  }
 `;
 
 export const HabilidadesSection = styled.section`
@@ -72,6 +76,10 @@ export const ListWrapper = styled.ul`
   @media (max-width: 600px) {
     grid-template-columns: repeat(2, min-content);
   }
+
+  @media (max-width: 375px) {
+    gap: 12.5px;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -82,6 +90,10 @@ export const ListItem = styled.li`
   padding: 20px;
   border-radius: 20px;
   background-color: ${({ theme }) => theme.colors.background.quaternary};
+
+  @media (max-width: 375px) {
+    padding: 20px 15px;
+  }
 `;
 
 export const ListItemIMG = styled.img`
@@ -98,6 +110,10 @@ export const ListItemIMG = styled.img`
   @media (max-width: 1000px) {
     width: 75px;
   }
+
+  @media (max-width: 375px) {
+    display: none;
+  }
 `;
 
 export const ListItemLabel = styled.figcaption`
@@ -110,5 +126,9 @@ export const ListItemLabel = styled.figcaption`
 
   @media (max-width: 1000px) {
     font-size: ${({ theme }) => theme.sizes.text.default.x};
+  }
+
+  @media (max-width: 375px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.xx};
   }
 `;
