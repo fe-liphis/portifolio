@@ -23,6 +23,8 @@ export const HeaderNav = styled.nav.attrs<{ $isOpen: boolean }>((props) => ({
   align-items: center;
   gap: 50px;
   justify-content: center;
+  animation-duration: 1s;
+  animation-name: opacity;
 
   @media (max-width: 1400px) {
     gap: 35px;
@@ -43,6 +45,16 @@ export const HeaderNav = styled.nav.attrs<{ $isOpen: boolean }>((props) => ({
   @media (max-width: 600px) {
     flex-direction: column;
     gap: 20px;
+  }
+
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 `;
 
@@ -73,12 +85,14 @@ export const HeaderLink = styled.a`
   }
 `;
 
-export const MenuButton = styled.button`
+export const MenuButton = styled.button.attrs<{ $color?: string }>((props) => ({
+  $color: props.$color || props.theme.colors.text.principal,
+}))`
   display: none;
   font-size: ${(props) => props.theme.sizes.text.default.m};
   border: none;
   background-color: transparent;
-  color: ${(props) => props.theme.colors.text.principal};
+  color: ${(props) => props.$color};
   margin: auto;
 
   @media (max-width: 768px) {

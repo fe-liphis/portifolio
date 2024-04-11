@@ -11,11 +11,12 @@ function Header() {
   return (
     <>
       <HeaderContainer>
-        {menuIsOpen ? (
-          <MenuButton onClick={handleOnClickMenu}>X</MenuButton>
-        ) : (
-          <MenuButton onClick={handleOnClickMenu}>MENU</MenuButton>
-        )}
+        <MenuButton
+          onClick={handleOnClickMenu}
+          $color={menuIsOpen ? "#FFDC57" : undefined}
+        >
+          {menuIsOpen ? "X" : "MENU"}
+        </MenuButton>
         <HeaderNav $isOpen={menuIsOpen}>
           <HeaderLink href="">Resumo</HeaderLink>
           <HeaderLink href="">Habilidades</HeaderLink>
