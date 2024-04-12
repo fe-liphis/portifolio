@@ -1,3 +1,4 @@
+import Contatos from "./components/Contatos/Contatos";
 import Footer from "./components/Footer/Footer";
 import Habilidades from "./components/Habilidades/Habilidades";
 import Header from "./components/Header/Header";
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Resumo />
       <Habilidades />
+      <Contatos />
       <Footer />
     </>
   );
