@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterTitulo = styled.h1`
+export const FooterTitulo = styled.h4`
   font-size: ${({ theme }) => theme.sizes.text.title.lg};
   font-weight: bold;
   color: ${({ theme }) => theme.colors.text.principal};
