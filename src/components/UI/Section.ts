@@ -1,7 +1,15 @@
 import styled from "styled-components";
+import theme from "../../styles/theme";
 
-export const Section = styled.section`
-  background-color: ${({ theme }) => theme.colors.background.secondary};
+type SectionProps = {
+  $bgColor: keyof typeof theme.colors.background;
+};
+
+export const Section = styled.section.attrs<SectionProps>((props) => ({
+  $bgColor: props.$bgColor,
+}))`
+  background-color: ${({ $bgColor, theme }) =>
+    theme.colors.background[$bgColor]};
   padding: 5% 15%;
 
   @media (max-width: 1400px) {

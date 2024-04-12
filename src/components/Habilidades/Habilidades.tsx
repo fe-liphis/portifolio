@@ -4,7 +4,7 @@ import { HabilidadesTitulo } from "./styles";
 
 function Habilidades() {
   return (
-    <Section>
+    <Section $bgColor="secondary">
       <HabilidadesTitulo>Habilidades</HabilidadesTitulo>
       <List />
     </Section>

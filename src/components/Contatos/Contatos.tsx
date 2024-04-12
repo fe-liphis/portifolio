@@ -2,10 +2,11 @@ import React from "react";
 import github_icon from "../../assets/contatos-icon/github.svg";
 import linkedin_icon from "../../assets/contatos-icon/linkedin.svg";
 import email_icon from "../../assets/contatos-icon/email.svg";
+import { Section } from "../UI/Section";
 
 function Contatos() {
   return (
-    <section>
+    <Section $bgColor="secondary">
       <h4>Contatos</h4>
       <address>
         <nav>
@@ -25,7 +26,7 @@ function Contatos() {
           </ul>
         </nav>
       </address>
-    </section>
+    </Section>
   );
 }
 
