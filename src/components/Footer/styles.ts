@@ -11,17 +11,14 @@ export const FooterTitulo = styled.h4`
 
   @media (max-width: 1400px) {
     font-size: ${({ theme }) => theme.sizes.text.title.m};
-    margin-bottom: 10px;
   }
 
   @media (max-width: 1000px) {
     font-size: ${({ theme }) => theme.sizes.text.title.x};
-    margin-bottom: 5px;
   }
 
   @media (max-width: 768px) {
     text-align: center;
-    margin-bottom: 20px;
   }
 
   @media (max-width: 425px) {
@@ -54,12 +51,20 @@ export const FooterNav = styled.nav`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media (max-width: 600px) {
+    align-items: center;
+  }
 `;
 
 export const FooterLink = styled.a`
   color: ${({ theme }) => theme.colors.text.principal};
   font-size: ${({ theme }) => theme.sizes.text.default.m};
   text-decoration: none;
+
+  @media (max-width: 600px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.x};
+  }
 `;
 
 export const FooterArticle = styled.article`
@@ -68,6 +73,17 @@ export const FooterArticle = styled.article`
   justify-content: space-between;
   border-top: 2px solid white;
   padding-top: 20px;
+  gap: 25px;
+
+  a {
+    @media (max-width: 768px) {
+      font-size: ${({ theme }) => theme.sizes.text.default.x};
+    }
+
+    @media (max-width: 425px) {
+      font-size: ${({ theme }) => theme.sizes.text.default.xx};
+    }
+  }
 `;
 
 export const FooterParagraph = styled.p`
@@ -76,5 +92,13 @@ export const FooterParagraph = styled.p`
 
   strong {
     font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.x};
+  }
+
+  @media (max-width: 425px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.xx};
   }
 `;
