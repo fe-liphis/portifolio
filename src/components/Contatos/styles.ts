@@ -4,6 +4,8 @@ export const ContatosTitulo = styled.h4`
   font-size: ${({ theme }) => theme.sizes.text.title.lg};
   font-weight: bold;
   color: ${({ theme }) => theme.colors.text.secondary};
+  text-align: end;
+  margin-bottom: 15px;
 
   @media (max-width: 1600px) {
     font-size: 70px;
@@ -25,3 +27,31 @@ export const ContatosTitulo = styled.h4`
     font-size: ${({ theme }) => theme.sizes.text.title.xx};
   }
 `;
+
+export const ContatosList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+export const ContatoItem = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`;
+
+export const ContatoLink = styled.a`
+  font-size: ${({ theme }) => theme.sizes.text.default.m};
+  color: ${({ theme }) => theme.colors.text.secondary};
+  font-weight: bold;
+`;
+
+export const ContatoNome = styled.p`
+  font-size: ${({ theme }) => theme.sizes.text.default.m};
+  color: ${({ theme }) => theme.colors.text.secondary};
+  font-weight: bold;
+`;
+
+export const ContatoImg = styled.img`
+
+`
