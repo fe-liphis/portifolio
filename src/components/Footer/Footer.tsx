@@ -1,4 +1,11 @@
-import { FooterContainer, FooterLink, FooterNav, FooterTitulo } from "./styles";
+import {
+  FooterArticle,
+  FooterContainer,
+  FooterLink,
+  FooterNav,
+  FooterParagraph,
+  FooterTitulo,
+} from "./styles";
 
 function Footer() {
   return (
@@ -12,10 +19,12 @@ function Footer() {
         <FooterLink href="">Projetos</FooterLink>
         <FooterLink href="">Contatos</FooterLink>
       </FooterNav>
-      <article>
-        <p>@2024 Felipe Gabriel Costa de Oliveira</p>
-        <a href="">Código fonte</a>
-      </article>
+      <FooterArticle>
+        <FooterParagraph>
+          <strong>@2024</strong> Felipe Gabriel Costa de Oliveira
+        </FooterParagraph>
+        <FooterLink href="">Código fonte</FooterLink>
+      </FooterArticle>
     </FooterContainer>
   );
 }

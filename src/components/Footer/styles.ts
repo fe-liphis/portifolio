@@ -61,3 +61,20 @@ export const FooterLink = styled.a`
   font-size: ${({ theme }) => theme.sizes.text.default.m};
   text-decoration: none;
 `;
+
+export const FooterArticle = styled.article`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid white;
+  padding-top: 20px;
+`;
+
+export const FooterParagraph = styled.p`
+  color: ${({ theme }) => theme.colors.text.principal};
+  font-size: ${({ theme }) => theme.sizes.text.default.m};
+
+  strong {
+    font-weight: bold;
+  }
+`;
