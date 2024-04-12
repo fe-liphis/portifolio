@@ -1,7 +1,9 @@
+import { FooterTitulo } from "./styles";
+
 function Footer() {
   return (
     <footer>
-      <h4>Links</h4>
+      <FooterTitulo>Links</FooterTitulo>
       <nav>
         <a href="">Resumo</a>
         <a href="">Habilidades</a>
