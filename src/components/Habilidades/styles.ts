@@ -34,21 +34,9 @@ export const ListWrapper = styled.ul`
   grid-template-columns: repeat(4, min-content);
   align-items: center;
   justify-content: center;
-  gap: 50px;
-
-  @media (max-width: 1400px) {
-    gap: 40px;
-  }
-
-  @media (max-width: 1200px) {
-    gap: 35px;
-  }
+  gap: 35px;
 
   @media (max-width: 1000px) {
-    gap: 25px;
-  }
-
-  @media (max-width: 900px) {
     gap: 20px;
   }
 
@@ -80,11 +68,7 @@ export const ListItem = styled.li`
 `;
 
 export const ListItemIMG = styled.img`
-  width: 150px;
-
-  @media (max-width: 1600px) {
-    width: 125px;
-  }
+  width: 125px;
 
   @media (max-width: 1400px) {
     width: 100px;
