@@ -25,7 +25,7 @@ function List() {
   return (
     <ProjetoList>
       {projetosList.map((projeto) => (
-        <ProjetoItem>
+        <ProjetoItem key={projeto.link}>
           <ProjetoImg src={projeto.imgSrc} alt={projeto.imgAlt} />
           <ProjetoLink href={projeto.link} target="_blank">
             Ver projeto

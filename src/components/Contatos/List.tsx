@@ -38,7 +38,7 @@ function List() {
   return (
     <ContatosList>
       {contatosList.map((contato) => (
-        <ContatoItem>
+        <ContatoItem key={contato.link || contato.nome}>
           <ContatoImg src={contato.imgSrc} alt={contato.alt} />
           {contato.link ? (
             <ContatoLink target="_blank" href={contato.link}>
