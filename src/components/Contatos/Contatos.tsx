@@ -1,4 +1,3 @@
-import React from "react";
 import { Section } from "../UI/Section";
 import { ContatosTitulo } from "./styles";
 import List from "./List";
