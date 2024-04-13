@@ -16,11 +16,11 @@ function Formacao() {
           marginBottom: "20px",
         }}
       >
-        <p id="graduacao_start"> 07/2023 </p>
-        <p id="graduacao_end"> 12/2025 </p>
+        <p id="graduacao_date_start"> 07/2023 </p>
+        <p id="graduacao_date_end"> 12/2025 </p>
         <Xarrow
-          start={"graduacao_start"}
-          end={"graduacao_end"}
+          start={"graduacao_date_start"}
+          end={"graduacao_date_end"}
           dashness={true}
           showHead={false}
           color="#57F7F2"
@@ -32,6 +32,7 @@ function Formacao() {
           display: "flex",
           justifyContent: "space-between",
           width: "100%",
+          marginBottom: "20px",
         }}
       >
         <div id="timeline_start"></div>
@@ -46,6 +47,21 @@ function Formacao() {
           tailColor={"white"}
           showTail={true}
         />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "70.9%",
+          marginLeft: "auto",
+          marginRight: "50px",
+          marginBottom: "20px",
+        }}
+      >
+        <p id="graduacao_name">
+          Análise e desenvolvimento de sistemas <br /> Unicesumar
+        </p>
+        <p>Conclusão prevista</p>
       </div>
     </Section>
   );
