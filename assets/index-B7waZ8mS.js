@@ -137,7 +137,7 @@ Error generating stack: `+l.message+`
   @media (max-width: 425px) {
     width: 35px;
   }
-`,Wh="/assets/github-CCEswDYg.svg",Qh="/assets/linkedin-MulVPDNt.svg",Gh="/assets/email-CFg0sW8F.svg",Yh=[{imgSrc:Qh,alt:"Logo do Linkedin",nome:"fe-liphis",link:"https://www.linkedin.com/in/fe-liphis/"},{imgSrc:Wh,alt:"Logo do Github",nome:"fe-liphis",link:"https://github.com/fe-liphis"},{imgSrc:Gh,alt:"Logo de Email",nome:"felipeg.costaoliveira@gmail.com"}];function Kh(){return C.jsx(Ah,{children:Yh.map(e=>C.jsxs(Uh,{children:[C.jsx(Vh,{src:e.imgSrc,alt:e.alt}),e.link?C.jsx(Bh,{target:"_blank",href:e.link,children:e.nome}):C.jsx(Hh,{children:e.nome})]}))})}function Xh(){return C.jsxs(ts,{$bgColor:"secondary",children:[C.jsx(Dh,{children:"Contatos"}),C.jsx("address",{children:C.jsx("nav",{children:C.jsx(Kh,{})})})]})}const Zh=O.h4`
+`,Wh="/assets/github-CCEswDYg.svg",Qh="/assets/linkedin-MulVPDNt.svg",Gh="/assets/email-CFg0sW8F.svg",Yh=[{imgSrc:Qh,alt:"Logo do Linkedin",nome:"fe-liphis",link:"https://www.linkedin.com/in/fe-liphis/"},{imgSrc:Wh,alt:"Logo do Github",nome:"fe-liphis",link:"https://github.com/fe-liphis"},{imgSrc:Gh,alt:"Logo de Email",nome:"felipeg.costaoliveira@gmail.com"}];function Kh(){return C.jsx(Ah,{children:Yh.map(e=>C.jsxs(Uh,{children:[C.jsx(Vh,{src:e.imgSrc,alt:e.alt}),e.link?C.jsx(Bh,{target:"_blank",href:e.link,children:e.nome}):C.jsx(Hh,{children:e.nome})]},e.link||e.nome))})}function Xh(){return C.jsxs(ts,{$bgColor:"secondary",children:[C.jsx(Dh,{children:"Contatos"}),C.jsx("address",{children:C.jsx("nav",{children:C.jsx(Kh,{})})})]})}const Zh=O.h4`
   font-size: ${({theme:e})=>e.sizes.text.title.lg};
   font-weight: bold;
   color: ${({theme:e})=>e.colors.text.principal};
@@ -516,7 +516,7 @@ Error generating stack: `+l.message+`
   @media (max-width: 1000px) {
     font-size: ${({theme:e})=>e.sizes.text.default.xx};
   }
-`,R0=[{imgSrc:z0,imgAlt:"",link:"https://github.com/fe-liphis/felipe-gabriel-1-desafio-pb-aws-react"},{imgSrc:P0,imgAlt:"",link:"https://github.com/fe-liphis/FloriculturaGrupo04"},{imgSrc:$0,imgAlt:"",link:"https://github.com/fe-liphis/locofy-myride"}];function O0(){return C.jsx(j0,{children:R0.map(e=>C.jsxs(L0,{children:[C.jsx(T0,{src:e.imgSrc,alt:e.imgAlt}),C.jsx(I0,{href:e.link,target:"_blank",children:"Ver projeto"})]}))})}function F0(){return C.jsxs(ts,{$bgColor:"primary",children:[C.jsx(N0,{children:"Projetos"}),C.jsx(O0,{})]})}const M0="/assets/profile-Eyq6xLAY.jpg",D0=O.article`
+`,R0=[{imgSrc:z0,imgAlt:"",link:"https://github.com/fe-liphis/felipe-gabriel-1-desafio-pb-aws-react"},{imgSrc:P0,imgAlt:"",link:"https://github.com/fe-liphis/FloriculturaGrupo04"},{imgSrc:$0,imgAlt:"",link:"https://github.com/fe-liphis/locofy-myride"}];function O0(){return C.jsx(j0,{children:R0.map(e=>C.jsxs(L0,{children:[C.jsx(T0,{src:e.imgSrc,alt:e.imgAlt}),C.jsx(I0,{href:e.link,target:"_blank",children:"Ver projeto"})]},e.link))})}function F0(){return C.jsxs(ts,{$bgColor:"primary",children:[C.jsx(N0,{children:"Projetos"}),C.jsx(O0,{})]})}const M0="/assets/profile-Eyq6xLAY.jpg",D0=O.article`
   display: flex;
   align-items: center;
   justify-content: space-between;
