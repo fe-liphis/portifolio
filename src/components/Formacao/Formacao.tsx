@@ -10,6 +10,27 @@ function Formacao() {
         style={{
           display: "flex",
           justifyContent: "space-between",
+          width: "60%",
+          marginLeft: "auto",
+          marginRight: "50px",
+          marginBottom: "20px",
+        }}
+      >
+        <p id="graduacao_start"> 07/2023 </p>
+        <p id="graduacao_end"> 12/2025 </p>
+        <Xarrow
+          start={"graduacao_start"}
+          end={"graduacao_end"}
+          dashness={true}
+          showHead={false}
+          color="#57F7F2"
+          showTail={false}
+        />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
           width: "100%",
         }}
       >
