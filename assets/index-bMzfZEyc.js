@@ -175,15 +175,17 @@ Error generating stack: `+l.message+`
 
   @media (max-width: 900px) {
     padding: 5% 10%;
+    gap: 30px;
   }
 
   @media (max-width: 768px) {
     padding: 7.5%;
+    gap: 25px;
   }
 `,qh=M.nav`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 
   @media (max-width: 600px) {
     align-items: center;
