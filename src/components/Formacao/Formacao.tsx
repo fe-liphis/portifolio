@@ -1,10 +1,10 @@
-import React from "react";
 import { Section } from "../UI/Section";
+import { FormacaoTitulo } from "./styles";
 
 function Formacao() {
   return (
     <Section $bgColor="primary">
-      <h2>Formação</h2>
+      <FormacaoTitulo>Formação</FormacaoTitulo>
     </Section>
   );
 }
