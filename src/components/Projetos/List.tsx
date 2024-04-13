@@ -1,6 +1,7 @@
 import projeto_1 from "../../assets/projetos-img/projeto-1.png";
 import projeto_2 from "../../assets/projetos-img/projeto-2.png";
 import projeto_3 from "../../assets/projetos-img/projeto-3.png";
+import { ProjetoImg, ProjetoItem, ProjetoLink, ProjetoList } from "./styles";
 
 const projetosList: Array<{ imgSrc: string; imgAlt: string; link: string }> = [
   {
@@ -22,14 +23,16 @@ const projetosList: Array<{ imgSrc: string; imgAlt: string; link: string }> = [
 
 function List() {
   return (
-    <ul>
+    <ProjetoList>
       {projetosList.map((projeto) => (
-        <li>
-          <img src={projeto.imgSrc} alt={projeto.imgAlt} />
-          <a href={projeto.link}>Ver projeto</a>
-        </li>
+        <ProjetoItem>
+          <ProjetoImg src={projeto.imgSrc} alt={projeto.imgAlt} />
+          <ProjetoLink href={projeto.link} target="_blank">
+            Ver projeto
+          </ProjetoLink>
+        </ProjetoItem>
       ))}
-    </ul>
+    </ProjetoList>
   );
 }
 
