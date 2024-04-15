@@ -84,12 +84,8 @@ export const ListItemIMG = styled.img`
 `;
 
 export const ListItemLabel = styled.figcaption`
-  font-size: 24px;
+  font-size: ${({ theme }) => theme.sizes.text.default.m};
   font-weight: bold;
-
-  @media (max-width: 1400px) {
-    font-size: ${({ theme }) => theme.sizes.text.default.m};
-  }
 
   @media (max-width: 1000px) {
     font-size: ${({ theme }) => theme.sizes.text.default.x};

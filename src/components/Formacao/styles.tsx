@@ -36,7 +36,7 @@ export const FormacaoTitulo = styled.h2`
 export const TimelineWrapper = styled.section`
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  width: 80%;
+  width: 100%;
   margin: auto;
 `;
 
@@ -50,6 +50,7 @@ export const TimelineDescriptionContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   padding: 0 50px;
 `;
 
@@ -66,8 +67,16 @@ export const TimelineText = styled.p.attrs<{
 }))`
   font-weight: ${({ $bold }) => ($bold ? "bold" : "normal")};
   color: ${({ $color }) => $color && theme.colors.text[$color]};
-  font-size: ${({ theme }) => theme.sizes.text.default.x};
+  font-size: ${({ theme }) => theme.sizes.text.default.m};
   text-align: center;
   padding: ${({ $paddingLeftAndRight }) => $paddingLeftAndRight && "0 10px"};
-  padding-bottom: ${({ $paddingBottom }) => $paddingBottom && "50px"};
+  padding-bottom: ${({ $paddingBottom }) => $paddingBottom && "40px"};
+
+  @media (max-width: 1024px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.x};
+  }
+
+  @media (max-width: 568px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.xx};
+  }
 `;
