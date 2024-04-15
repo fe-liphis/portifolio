@@ -37,13 +37,24 @@ export const TimelineWrapper = styled.section`
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   width: 100%;
-  margin: auto;
+
+  @media (max-width: 568px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
 `;
 
 export const TimelineArrowContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
+
+  @media (max-width: 568px) {
+    padding: 0;
+    height: 70vh;
+    flex-direction: column;
+  }
 `;
 
 export const TimelineDescriptionContainer = styled.div`
@@ -52,6 +63,12 @@ export const TimelineDescriptionContainer = styled.div`
   justify-content: space-between;
   gap: 20px;
   padding: 0 50px;
+
+  @media (max-width: 568px) {
+    padding: 0;
+    height: 70vh;
+    flex-direction: column;
+  }
 `;
 
 export const TimelineText = styled.p.attrs<{

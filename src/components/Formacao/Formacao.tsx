@@ -7,8 +7,20 @@ import {
   TimelineText,
   TimelineWrapper,
 } from "./styles";
+import { useEffect, useState } from "react";
 
 function Formacao() {
+  const [matches, setMatches] = useState(
+    matchMedia("(max-width: 568px)").matches
+  );
+  console.log(matches);
+
+  useEffect(() => {
+    matchMedia("(max-width: 568px)").addEventListener("change", (e) =>
+      setMatches(e.matches)
+    );
+  }, []);
+
   return (
     <Section $bgColor="primary">
       <FormacaoTitulo>Formação</FormacaoTitulo>
@@ -47,6 +59,8 @@ function Formacao() {
             tailShape={"circle"}
             tailColor={"white"}
             showTail={true}
+            startAnchor={matches ? "bottom" : "left"}
+            endAnchor={matches ? "top" : "right"}
           />
         </TimelineArrowContainer>
         <TimelineDescriptionContainer>
