@@ -26,10 +26,10 @@ function Formacao() {
       <FormacaoTitulo>Formação</FormacaoTitulo>
       <TimelineWrapper>
         <TimelineDescriptionContainer>
-          <TimelineText id="graduacao_date_start" $bold $paddingLeftAndRight>
+          <TimelineText id="graduacao_date_start" $paddingLeftAndRight>
             07/2023{" "}
           </TimelineText>
-          <TimelineText id="graduacao_date_end" $bold $paddingLeftAndRight>
+          <TimelineText id="graduacao_date_end" $paddingLeftAndRight>
             {" "}
             12/2025{" "}
           </TimelineText>
@@ -39,7 +39,7 @@ function Formacao() {
             dashness={true}
             showHead={false}
             labels={
-              <TimelineText $color="aqua" $paddingBottom>
+              <TimelineText $color="aqua" $paddingBottom $bold>
                 2° Semestre
               </TimelineText>
             }
@@ -64,7 +64,12 @@ function Formacao() {
           />
         </TimelineArrowContainer>
         <TimelineDescriptionContainer>
-          <TimelineText $color="aqua" id="graduacao_name" $vertical={matches}>
+          <TimelineText
+            $color="aqua"
+            id="graduacao_name"
+            $vertical={matches}
+            $bold
+          >
             Análise e desenvolvimento de sistemas <br /> Unicesumar
           </TimelineText>
           <TimelineText $vertical={matches}>Conclusão prevista</TimelineText>
