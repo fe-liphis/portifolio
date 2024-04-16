@@ -1,5 +1,7 @@
+import { Section } from "../UI/Section";
+
 function Experiencias() {
-  return <h3>Experiencias</h3>;
+  return <Section $bgColor="secondary">Experiencias</Section>;
 }
 
 export default Experiencias;

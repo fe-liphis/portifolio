@@ -1,4 +1,5 @@
 import Contatos from "./components/Contatos/Contatos";
+import Experiencias from "./components/Experiencias/Experiencias";
 import Footer from "./components/Footer/Footer";
 import Formacao from "./components/Formacao/Formacao";
 import Habilidades from "./components/Habilidades/Habilidades";
@@ -13,6 +14,7 @@ function App() {
       <Resumo />
       <Habilidades />
       <Formacao />
+      <Experiencias />
       <Projetos />
       <Contatos />
       <Footer />
