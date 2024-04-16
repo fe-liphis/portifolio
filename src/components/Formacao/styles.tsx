@@ -29,18 +29,25 @@ export const FormacaoTitulo = styled.h2`
 
   @media (max-width: 425px) {
     font-size: ${({ theme }) => theme.sizes.text.title.xx};
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
 `;
 
 export const TimelineWrapper = styled.section`
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  gap: 30px;
   width: 100%;
 
+  @media (max-width: 1024px) {
+    gap: 25px;
+  }
+
   @media (max-width: 568px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, min-content);
     grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 40px;
   }
 `;
 
@@ -52,7 +59,7 @@ export const TimelineArrowContainer = styled.div`
 
   @media (max-width: 568px) {
     padding: 0;
-    height: 70vh;
+    height: 500px;
     flex-direction: column;
   }
 `;
@@ -66,7 +73,7 @@ export const TimelineDescriptionContainer = styled.div`
 
   @media (max-width: 568px) {
     padding: 0;
-    height: 70vh;
+    height: 500px;
     flex-direction: column;
   }
 `;
@@ -76,12 +83,22 @@ export const TimelineText = styled.p.attrs<{
   $bold?: boolean;
   $paddingLeftAndRight?: boolean;
   $paddingBottom?: boolean;
-}>(({ $color = "principal", $bold, $paddingLeftAndRight, $paddingBottom }) => ({
-  $color: $color,
-  $bold: $bold,
-  $paddingLeftAndRight: $paddingLeftAndRight,
-  $paddingBottom: $paddingBottom,
-}))`
+  $vertical?: boolean;
+}>(
+  ({
+    $color = "principal",
+    $bold,
+    $paddingLeftAndRight,
+    $paddingBottom,
+    $vertical,
+  }) => ({
+    $color: $color,
+    $bold: $bold,
+    $paddingLeftAndRight: $paddingLeftAndRight,
+    $paddingBottom: $paddingBottom,
+    $vertical: $vertical,
+  })
+)`
   font-weight: ${({ $bold }) => ($bold ? "bold" : "normal")};
   color: ${({ $color }) => $color && theme.colors.text[$color]};
   font-size: ${({ theme }) => theme.sizes.text.default.m};
@@ -94,6 +111,9 @@ export const TimelineText = styled.p.attrs<{
   }
 
   @media (max-width: 568px) {
-    font-size: ${({ theme }) => theme.sizes.text.default.xx};
+    padding: ${({ $paddingLeftAndRight }) => $paddingLeftAndRight && "5px 0"};
+    padding-bottom: ${({ $paddingBottom }) => $paddingBottom && "0px"};
+    writing-mode: ${({ $vertical }) => $vertical && "vertical-rl"};
+    text-orientation: ${({ $vertical }) => $vertical && "mixed"};
   }
 `;

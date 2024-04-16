@@ -64,10 +64,10 @@ function Formacao() {
           />
         </TimelineArrowContainer>
         <TimelineDescriptionContainer>
-          <TimelineText $color="aqua" id="graduacao_name">
+          <TimelineText $color="aqua" id="graduacao_name" $vertical={matches}>
             Análise e desenvolvimento de sistemas <br /> Unicesumar
           </TimelineText>
-          <TimelineText>Conclusão prevista</TimelineText>
+          <TimelineText $vertical={matches}>Conclusão prevista</TimelineText>
         </TimelineDescriptionContainer>
       </TimelineWrapper>
     </Section>
