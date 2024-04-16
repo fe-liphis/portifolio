@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "../../styles/theme";
 
 export const ExperienciasTitulo = styled.h3`
   font-size: ${({ theme }) => theme.sizes.text.title.lg};
@@ -30,6 +31,23 @@ export const ExperienciasTitulo = styled.h3`
   }
 `;
 
+export const ExperienciasWrapper = styled.ol`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ExperienciaContainer = styled.li`
+  background-color: ${({ theme }) => theme.colors.background.quinary};
+  width: 65%;
+  padding: 60px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+`;
+
 export const NomeDoCargo = styled.h5`
   font-size: ${({ theme }) => theme.sizes.text.default.lg};
   color: ${({ theme }) => theme.colors.text.secondary};
@@ -46,4 +64,23 @@ export const ItemDescritivo = styled.li`
   color: ${({ theme }) => theme.colors.text.secondary};
   font-size: ${({ theme }) => theme.sizes.text.default.m};
   list-style: disc;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 500;
+  margin-bottom: 15px;
+`;
+
+export const TimelineText = styled.p.attrs<{
+  $color?: keyof typeof theme.colors.text;
+  $bold?: boolean;
+  $padding?: boolean;
+}>(({ $color = "principal", $bold, $padding }) => ({
+  $color: $color,
+  $bold: $bold,
+  $padding: $padding,
+}))`
+  font-size: ${({ theme }) => theme.sizes.text.default.x};
+  color: ${({ $color }) => $color && theme.colors.text[$color]};
+  font-weight: ${({ $bold }) => $bold && "bold"};
+  padding: ${({ $padding }) => $padding && "10px 0"};
 `;

@@ -1,25 +1,63 @@
+import Xarrow from "react-xarrows";
 import { Section } from "../UI/Section";
 import List from "./List";
-import { ExperienciasTitulo, NomeDaEmpresa, NomeDoCargo } from "./styles";
+import {
+  ExperienciaContainer,
+  ExperienciasTitulo,
+  ExperienciasWrapper,
+  NomeDaEmpresa,
+  NomeDoCargo,
+  TimelineText,
+} from "./styles";
 
 function Experiencias() {
   return (
     <Section $bgColor="secondary">
       <ExperienciasTitulo>Experiências</ExperienciasTitulo>
-      <ol>
-        <li>
+      <ExperienciasWrapper>
+        <ExperienciaContainer>
           <NomeDoCargo>Estágio em desenvolvimento front-end</NomeDoCargo>
           <NomeDaEmpresa>Compass.UOL, Remoto</NomeDaEmpresa>
-          <List
-            descricao="Estágio focado em aprofundar os conhecimentos em AWS e React com uma trilha de aprendizado em sprints de 1 semana;
-            Aprender sobre como é trabalhar em modelo ágil com Scrum e Kanban em prática;
-            Criar códigos em JavaScript e TypeScript com as boas práticas de versionamento;
-            Construir aplicações com React utilizando Redux e rotas inteligentes com React Router;
-            Construir testes unitários utilizando Vitest e Jest e entender como funciona TDD;
-            Estudos para a realização da prova de Certificação de Cloud Practitioner da AWS;"
-          />
-        </li>
-      </ol>
+          <section style={{ display: "flex", gap: "50px" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <TimelineText id="data_final" $padding $bold>
+                04/2024
+              </TimelineText>
+              <TimelineText id="data_inicio" $padding $bold>
+                11/2023
+              </TimelineText>
+              <Xarrow
+                start={"data_inicio"}
+                end={"data_final"}
+                lineColor={"white"}
+                dashness={true}
+                labels={
+                  <TimelineText $color="navyBlue" $bold>
+                    5 meses
+                  </TimelineText>
+                }
+                headShape={"circle"}
+                headSize={5}
+                headColor={"white"}
+              />
+            </div>
+            <List
+              descricao="Estágio focado em aprofundar os conhecimentos em AWS e React com uma trilha de aprendizado em sprints de 1 semana;
+              Aprender sobre como é trabalhar em modelo ágil com Scrum e Kanban em prática;
+              Criar códigos em JavaScript e TypeScript com as boas práticas de versionamento;
+              Construir aplicações com React utilizando Redux e rotas inteligentes com React Router;
+              Construir testes unitários utilizando Vitest e Jest e entender como funciona TDD;
+              Estudos para a realização da prova de Certificação de Cloud Practitioner da AWS;"
+            />
+          </section>
+        </ExperienciaContainer>
+      </ExperienciasWrapper>
     </Section>
   );
 }
