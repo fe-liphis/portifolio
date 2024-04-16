@@ -70,6 +70,17 @@ export const ItemDescritivo = styled.li`
   margin-bottom: 15px;
 `;
 
+export const DescricaoContainer = styled.section`
+  display: flex;
+  gap: 50px;
+`;
+
+export const TimelineContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
 export const TimelineText = styled.p.attrs<{
   $color?: keyof typeof theme.colors.text;
   $bold?: boolean;

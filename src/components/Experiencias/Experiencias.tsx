@@ -2,11 +2,13 @@ import Xarrow from "react-xarrows";
 import { Section } from "../UI/Section";
 import List from "./List";
 import {
+  DescricaoContainer,
   ExperienciaContainer,
   ExperienciasTitulo,
   ExperienciasWrapper,
   NomeDaEmpresa,
   NomeDoCargo,
+  TimelineContainer,
   TimelineText,
 } from "./styles";
 
@@ -18,14 +20,8 @@ function Experiencias() {
         <ExperienciaContainer>
           <NomeDoCargo>Estágio em desenvolvimento front-end</NomeDoCargo>
           <NomeDaEmpresa>Compass.UOL, Remoto</NomeDaEmpresa>
-          <section style={{ display: "flex", gap: "50px" }}>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-              }}
-            >
+          <DescricaoContainer>
+            <TimelineContainer>
               <TimelineText id="data_final" $padding $bold>
                 04/2024
               </TimelineText>
@@ -46,7 +42,7 @@ function Experiencias() {
                 headSize={5}
                 headColor={"white"}
               />
-            </div>
+            </TimelineContainer>
             <List
               descricao="Estágio focado em aprofundar os conhecimentos em AWS e React com uma trilha de aprendizado em sprints de 1 semana;
               Aprender sobre como é trabalhar em modelo ágil com Scrum e Kanban em prática;
@@ -55,7 +51,7 @@ function Experiencias() {
               Construir testes unitários utilizando Vitest e Jest e entender como funciona TDD;
               Estudos para a realização da prova de Certificação de Cloud Practitioner da AWS;"
             />
-          </section>
+          </DescricaoContainer>
         </ExperienciaContainer>
       </ExperienciasWrapper>
     </Section>
