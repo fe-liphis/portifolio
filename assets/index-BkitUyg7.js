@@ -344,7 +344,7 @@ function print() { __p += __j.call(arguments, '') }
     writing-mode: ${({$vertical:e})=>e&&"vertical-rl"};
     text-orientation: ${({$vertical:e})=>e&&"mixed"};
   }
-`;function T3(){const[e,t]=pr.useState(matchMedia("(max-width: 568px)").matches);return console.log(e),pr.useEffect(()=>{matchMedia("(max-width: 568px)").addEventListener("change",r=>t(r.matches))},[]),H.jsxs(Xs,{$bgColor:"primary",children:[H.jsx(C3,{children:"Formação"}),H.jsxs(P3,{children:[H.jsxs(Mm,{children:[H.jsxs(Iu,{id:"graduacao_date_start",$paddingLeftAndRight:!0,children:["07/2023"," "]}),H.jsxs(Iu,{id:"graduacao_date_end",$paddingLeftAndRight:!0,children:[" ","12/2025"," "]}),H.jsx(Nm,{start:"graduacao_date_start",end:"graduacao_date_end",dashness:!0,showHead:!1,labels:H.jsx(Iu,{$color:"aqua",$paddingBottom:!0,$bold:!0,children:"2° Semestre"}),color:"white",showTail:!1})]}),H.jsxs(k3,{children:[H.jsx("span",{id:"timeline_start"}),H.jsx("span",{id:"timeline_end"}),H.jsx(Nm,{start:"timeline_start",end:"timeline_end",lineColor:"white",headShape:"arrow1",headColor:"white",tailShape:"circle",tailColor:"white",showTail:!0,startAnchor:e?"bottom":"left",endAnchor:e?"top":"right"})]}),H.jsxs(Mm,{children:[H.jsxs(Iu,{$color:"aqua",id:"graduacao_name",$vertical:e,$bold:!0,children:["Análise e desenvolvimento de sistemas ",H.jsx("br",{})," Unicesumar"]}),H.jsx(Iu,{$vertical:e,children:"Conclusão prevista"})]})]})]})}const O3="/assets/html-BIk0_iL2.svg",R3="/assets/css-DQOhA6cf.svg",z3="/assets/javascript-D8vlPEf_.svg",L3="/assets/react-CwKfOmt6.svg",I3="/assets/typescript-CqFc0Ilk.svg",A3="/assets/nextjs-Deq8raL4.svg",N3="/assets/aws-B_BRsQ1p.svg",M3="/assets/git-CqbaCcIl.svg",$3="/assets/github-D9qM4S5C.svg",D3="/assets/vitest-BRYZDuz0.svg",F3="/assets/sql-CM_dHhKd.svg",j3="/assets/java-CfdYXFca.svg",B3=me.h2`
+`;function T3(e){const[t,r]=pr.useState(matchMedia(e).matches);return pr.useEffect(()=>{matchMedia(e).addEventListener("change",o=>r(o.matches))},[e]),t}function O3(){const e=T3("(max-width: 568px)");return H.jsxs(Xs,{$bgColor:"primary",children:[H.jsx(C3,{children:"Formação"}),H.jsxs(P3,{children:[H.jsxs(Mm,{children:[H.jsxs(Iu,{id:"graduacao_date_start",$paddingLeftAndRight:!0,children:["07/2023"," "]}),H.jsxs(Iu,{id:"graduacao_date_end",$paddingLeftAndRight:!0,children:[" ","12/2025"," "]}),H.jsx(Nm,{start:"graduacao_date_start",end:"graduacao_date_end",dashness:!0,showHead:!1,labels:H.jsx(Iu,{$color:"aqua",$paddingBottom:!0,$bold:!0,children:"2° Semestre"}),color:"white",showTail:!1})]}),H.jsxs(k3,{children:[H.jsx("span",{id:"timeline_start"}),H.jsx("span",{id:"timeline_end"}),H.jsx(Nm,{start:"timeline_start",end:"timeline_end",lineColor:"white",headShape:"arrow1",headColor:"white",tailShape:"circle",tailColor:"white",showTail:!0,startAnchor:e?"bottom":"left",endAnchor:e?"top":"right"})]}),H.jsxs(Mm,{children:[H.jsxs(Iu,{$color:"aqua",id:"graduacao_name",$vertical:e,$bold:!0,children:["Análise e desenvolvimento de sistemas ",H.jsx("br",{})," Unicesumar"]}),H.jsx(Iu,{$vertical:e,children:"Conclusão prevista"})]})]})]})}const R3="/assets/html-BIk0_iL2.svg",z3="/assets/css-DQOhA6cf.svg",L3="/assets/javascript-D8vlPEf_.svg",I3="/assets/react-CwKfOmt6.svg",A3="/assets/typescript-CqFc0Ilk.svg",N3="/assets/nextjs-Deq8raL4.svg",M3="/assets/aws-B_BRsQ1p.svg",$3="/assets/git-CqbaCcIl.svg",D3="/assets/github-D9qM4S5C.svg",F3="/assets/vitest-BRYZDuz0.svg",j3="/assets/sql-CM_dHhKd.svg",B3="/assets/java-CfdYXFca.svg",U3=me.h2`
   font-size: ${({theme:e})=>e.sizes.text.title.lg};
   font-weight: bold;
   color: ${({theme:e})=>e.colors.text.secondary};
@@ -371,7 +371,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 425px) {
     font-size: ${({theme:e})=>e.sizes.text.title.xx};
   }
-`,U3=me.ul`
+`,W3=me.ul`
   display: grid;
   grid-template-columns: repeat(4, min-content);
   align-items: center;
@@ -393,7 +393,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 375px) {
     gap: 12.5px;
   }
-`,W3=me.li`
+`,H3=me.li`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -405,7 +405,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 375px) {
     padding: 20px 15px;
   }
-`,H3=me.img`
+`,G3=me.img`
   width: 125px;
 
   @media (max-width: 1400px) {
@@ -419,7 +419,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 375px) {
     display: none;
   }
-`,G3=me.figcaption`
+`,X3=me.figcaption`
   font-size: ${({theme:e})=>e.sizes.text.default.m};
   font-weight: bold;
 
@@ -430,7 +430,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 375px) {
     font-size: ${({theme:e})=>e.sizes.text.default.xx};
   }
-`,X3=[{src:O3,name:"HTML"},{src:R3,name:"CSS"},{src:z3,name:"JavaScript"},{src:L3,name:"React.JS"},{src:I3,name:"TypeScript"},{src:A3,name:"Next.JS"},{src:N3,name:"AWS"},{src:M3,name:"Git"},{src:$3,name:"GitHub"},{src:D3,name:"Vitest"},{src:F3,name:"SQL"},{src:j3,name:"Java"}];function V3(){return H.jsx(U3,{children:X3.map(e=>H.jsxs(W3,{children:[H.jsx(H3,{src:e.src,alt:`Habilidade com ${e.name}`}),H.jsx(G3,{children:e.name})]},e.name))})}function Q3(){return H.jsxs(Xs,{$bgColor:"secondary",children:[H.jsx(B3,{children:"Habilidades"}),H.jsx(V3,{})]})}const K3=me.header`
+`,V3=[{src:R3,name:"HTML"},{src:z3,name:"CSS"},{src:L3,name:"JavaScript"},{src:I3,name:"React.JS"},{src:A3,name:"TypeScript"},{src:N3,name:"Next.JS"},{src:M3,name:"AWS"},{src:$3,name:"Git"},{src:D3,name:"GitHub"},{src:F3,name:"Vitest"},{src:j3,name:"SQL"},{src:B3,name:"Java"}];function Q3(){return H.jsx(W3,{children:V3.map(e=>H.jsxs(H3,{children:[H.jsx(G3,{src:e.src,alt:`Habilidade com ${e.name}`}),H.jsx(X3,{children:e.name})]},e.name))})}function K3(){return H.jsxs(Xs,{$bgColor:"secondary",children:[H.jsx(U3,{children:"Habilidades"}),H.jsx(Q3,{})]})}const Y3=me.header`
   background-color: ${e=>e.theme.colors.background.tertiary};
   padding: 17.5px 0;
   position: fixed;
@@ -445,7 +445,7 @@ function print() { __p += __j.call(arguments, '') }
     flex-direction: column;
     gap: 20px;
   }
-`,Y3=me.nav.attrs(e=>({$isOpen:e.$isOpen||!1}))`
+`,Z3=me.nav.attrs(e=>({$isOpen:e.$isOpen||!1}))`
   display: flex;
   align-items: center;
   gap: 50px;
@@ -508,7 +508,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 600px) {
     font-size: ${({theme:e})=>e.sizes.text.default.xx};
   }
-`,Z3=me.button.attrs(e=>({$color:e.$color||e.theme.colors.text.principal}))`
+`,q3=me.button.attrs(e=>({$color:e.$color||e.theme.colors.text.principal}))`
   display: none;
   font-size: ${e=>e.theme.sizes.text.default.m};
   border: none;
@@ -523,7 +523,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 700px) {
     font-size: ${e=>e.theme.sizes.text.default.x};
   }
-`;function q3(){const[e,t]=pr.useState(!1);function r(){t(o=>!o)}return H.jsx(H.Fragment,{children:H.jsxs(K3,{children:[H.jsx(Z3,{onClick:r,$color:e?"#FFDC57":void 0,children:e?"X":"MENU"}),H.jsxs(Y3,{$isOpen:e,children:[H.jsx(So,{href:"",children:"Resumo"}),H.jsx(So,{href:"",children:"Habilidades"}),H.jsx(So,{href:"",children:"Formação"}),H.jsx(So,{href:"",children:"Experiências"}),H.jsx(So,{href:"",children:"Projetos"}),H.jsx(So,{href:"",children:"Contatos"})]})]})})}const b3="/assets/projeto-1-BHjjo3VF.png",J3="/assets/projeto-2-DT8T_Xtm.png",e4="/assets/projeto-3-DUC93QqQ.png",t4=me.h3`
+`;function b3(){const[e,t]=pr.useState(!1);function r(){t(o=>!o)}return H.jsx(H.Fragment,{children:H.jsxs(Y3,{children:[H.jsx(q3,{onClick:r,$color:e?"#FFDC57":void 0,children:e?"X":"MENU"}),H.jsxs(Z3,{$isOpen:e,children:[H.jsx(So,{href:"",children:"Resumo"}),H.jsx(So,{href:"",children:"Habilidades"}),H.jsx(So,{href:"",children:"Formação"}),H.jsx(So,{href:"",children:"Experiências"}),H.jsx(So,{href:"",children:"Projetos"}),H.jsx(So,{href:"",children:"Contatos"})]})]})})}const J3="/assets/projeto-1-BHjjo3VF.png",e4="/assets/projeto-2-DT8T_Xtm.png",t4="/assets/projeto-3-DUC93QqQ.png",n4=me.h3`
   font-size: ${({theme:e})=>e.sizes.text.title.lg};
   font-weight: bold;
   color: ${({theme:e})=>e.colors.text.principal};
@@ -553,7 +553,7 @@ function print() { __p += __j.call(arguments, '') }
     font-size: ${({theme:e})=>e.sizes.text.title.xx};
     margin-bottom: 20px;
   }
-`,n4=me.ul`
+`,r4=me.ul`
   display: grid;
   grid-template-columns: repeat(3, min-content);
   justify-content: space-between;
@@ -576,7 +576,7 @@ function print() { __p += __j.call(arguments, '') }
     grid-template-columns: min-content;
     gap: 20px;
   }
-`,r4=me.li`
+`,i4=me.li`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -588,7 +588,7 @@ function print() { __p += __j.call(arguments, '') }
   box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.19);
-`,i4=me.img`
+`,o4=me.img`
   height: 200px;
 
   @media (max-width: 1600px) {
@@ -614,7 +614,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 468px) {
     height: 95px;
   }
-`,o4=me.a`
+`,u4=me.a`
   font-size: ${({theme:e})=>e.sizes.text.default.m};
   color: ${({theme:e})=>e.colors.text.secondary};
   font-weight: bold;
@@ -627,7 +627,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 1000px) {
     font-size: ${({theme:e})=>e.sizes.text.default.xx};
   }
-`,u4=[{imgSrc:b3,imgAlt:"",link:"https://github.com/fe-liphis/felipe-gabriel-1-desafio-pb-aws-react"},{imgSrc:J3,imgAlt:"",link:"https://github.com/fe-liphis/FloriculturaGrupo04"},{imgSrc:e4,imgAlt:"",link:"https://github.com/fe-liphis/locofy-myride"}];function l4(){return H.jsx(n4,{children:u4.map(e=>H.jsxs(r4,{children:[H.jsx(i4,{src:e.imgSrc,alt:e.imgAlt}),H.jsx(o4,{href:e.link,target:"_blank",children:"Ver projeto"})]},e.link))})}function a4(){return H.jsxs(Xs,{$bgColor:"primary",children:[H.jsx(t4,{children:"Projetos"}),H.jsx(l4,{})]})}const s4="/assets/profile-Eyq6xLAY.jpg",f4=me.article`
+`,l4=[{imgSrc:J3,imgAlt:"",link:"https://github.com/fe-liphis/felipe-gabriel-1-desafio-pb-aws-react"},{imgSrc:e4,imgAlt:"",link:"https://github.com/fe-liphis/FloriculturaGrupo04"},{imgSrc:t4,imgAlt:"",link:"https://github.com/fe-liphis/locofy-myride"}];function a4(){return H.jsx(r4,{children:l4.map(e=>H.jsxs(i4,{children:[H.jsx(o4,{src:e.imgSrc,alt:e.imgAlt}),H.jsx(u4,{href:e.link,target:"_blank",children:"Ver projeto"})]},e.link))})}function s4(){return H.jsxs(Xs,{$bgColor:"primary",children:[H.jsx(n4,{children:"Projetos"}),H.jsx(a4,{})]})}const f4="/assets/profile-Eyq6xLAY.jpg",c4=me.article`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -654,7 +654,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 425px) {
     padding-top: calc(7.5% + 50px);
   }
-`,c4=me.p`
+`,d4=me.p`
   font-size: ${({theme:e})=>e.sizes.text.default.lg};
   color: ${({theme:e})=>e.colors.text.principal};
   width: 31ch;
@@ -686,7 +686,7 @@ function print() { __p += __j.call(arguments, '') }
     line-height: 25px;
     width: fit-content;
   }
-`,d4=me.h1`
+`,p4=me.h1`
   font-size: ${({theme:e})=>e.sizes.text.title.lg};
   font-weight: bold;
   color: ${({theme:e})=>e.colors.text.principal};
@@ -714,7 +714,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 425px) {
     font-size: ${({theme:e})=>e.sizes.text.title.xx};
   }
-`,p4=me.img`
+`,h4=me.img`
   width: 400px;
   border-radius: 100%;
   box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.19);
@@ -742,7 +742,7 @@ function print() { __p += __j.call(arguments, '') }
   }
 `,Ia=me.strong`
   color: ${e=>e.color};
-`;function h4(){const{colors:{text:e}}=q5();return H.jsxs(f4,{children:[H.jsxs("section",{children:[H.jsx(d4,{children:"Resumo"}),H.jsxs(c4,{children:["Desenvolvedor de Software com 5 meses de experiência em front-end. Principais habilidades com ",H.jsx(Ia,{color:e.aqua,children:"React.JS"}),", ",H.jsx(Ia,{color:e.yellow,children:"JavaScript"}),","," ",H.jsx(Ia,{color:e.blue,children:"TypeScript"})," e sou certificado"," ",H.jsx(Ia,{color:e.orange,children:"Cloud Practitioner AWS"}),"."]})]}),H.jsx(p4,{src:s4,alt:"Foto de Perfil"})]})}function g4(){return H.jsxs(H.Fragment,{children:[H.jsx(q3,{}),H.jsx(h4,{}),H.jsx(Q3,{}),H.jsx(T3,{}),H.jsx(a4,{}),H.jsx(d3,{}),H.jsx(y3,{})]})}const m4=Sy`
+`;function g4(){const{colors:{text:e}}=q5();return H.jsxs(c4,{children:[H.jsxs("section",{children:[H.jsx(p4,{children:"Resumo"}),H.jsxs(d4,{children:["Desenvolvedor de Software com 5 meses de experiência em front-end. Principais habilidades com ",H.jsx(Ia,{color:e.aqua,children:"React.JS"}),", ",H.jsx(Ia,{color:e.yellow,children:"JavaScript"}),","," ",H.jsx(Ia,{color:e.blue,children:"TypeScript"})," e sou certificado"," ",H.jsx(Ia,{color:e.orange,children:"Cloud Practitioner AWS"}),"."]})]}),H.jsx(h4,{src:f4,alt:"Foto de Perfil"})]})}function m4(){return H.jsxs(H.Fragment,{children:[H.jsx(b3,{}),H.jsx(g4,{}),H.jsx(K3,{}),H.jsx(O3,{}),H.jsx(s4,{}),H.jsx(d3,{}),H.jsx(y3,{})]})}const v4=Sy`
     /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
@@ -791,9 +791,9 @@ function print() { __p += __j.call(arguments, '') }
         border-collapse: collapse;
         border-spacing: 0;
     }
-`,v4=Sy`    
+`,y4=Sy`    
     body {
         font-family: 'IBM Plex Mono', sans-serif;
         background-color: ${({theme:e})=>e.colors.background.primary};
     }
-`;function y4({children:e}){return H.jsxs(b5,{theme:Cy,children:[H.jsx(m4,{}),H.jsx(v4,{}),e]})}jc.createRoot(document.getElementById("root")).render(H.jsx(Qn.StrictMode,{children:H.jsx(y4,{children:H.jsx(g4,{})})}));
+`;function x4({children:e}){return H.jsxs(b5,{theme:Cy,children:[H.jsx(v4,{}),H.jsx(y4,{}),e]})}jc.createRoot(document.getElementById("root")).render(H.jsx(Qn.StrictMode,{children:H.jsx(x4,{children:H.jsx(m4,{})})}));
