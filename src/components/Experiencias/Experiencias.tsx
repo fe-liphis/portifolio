@@ -1,6 +1,6 @@
 import { Section } from "../UI/Section";
 import List from "./List";
-import { ExperienciasTitulo } from "./styles";
+import { ExperienciasTitulo, NomeDaEmpresa, NomeDoCargo } from "./styles";
 
 function Experiencias() {
   return (
@@ -8,8 +8,8 @@ function Experiencias() {
       <ExperienciasTitulo>Experiências</ExperienciasTitulo>
       <ol>
         <li>
-          <h5>Estágio em desenvolvimento front-end</h5>
-          <h6>Compass.UOL, Remoto</h6>
+          <NomeDoCargo>Estágio em desenvolvimento front-end</NomeDoCargo>
+          <NomeDaEmpresa>Compass.UOL, Remoto</NomeDaEmpresa>
           <List
             descricao="Estágio focado em aprofundar os conhecimentos em AWS e React com uma trilha de aprendizado em sprints de 1 semana;
             Aprender sobre como é trabalhar em modelo ágil com Scrum e Kanban em prática;

@@ -29,3 +29,14 @@ export const ExperienciasTitulo = styled.h3`
     margin-bottom: 20px;
   }
 `;
+
+export const NomeDoCargo = styled.h5`
+  font-size: ${({ theme }) => theme.sizes.text.default.lg};
+  font-weight: bold;
+`;
+
+export const NomeDaEmpresa = styled.h6`
+  font-size: ${({ theme }) => theme.sizes.text.default.m};
+  color: ${({ theme }) => theme.colors.text.navyBlue};
+  font-weight: bold;
+`;
