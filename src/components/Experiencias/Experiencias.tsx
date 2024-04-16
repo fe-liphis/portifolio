@@ -11,8 +11,11 @@ import {
   TimelineContainer,
   TimelineText,
 } from "./styles";
+import useMediaMatches from "../Formacao/hook";
 
 function Experiencias() {
+  const matches = useMediaMatches("(max-width: 568px)");
+
   return (
     <Section $bgColor="secondary">
       <ExperienciasTitulo>Experiências</ExperienciasTitulo>
@@ -34,13 +37,14 @@ function Experiencias() {
                 lineColor={"white"}
                 dashness={true}
                 labels={
-                  <TimelineText $color="navyBlue" $bold>
+                  <TimelineText $color="navyBlue" $bold $timelineLabel>
                     5 meses
                   </TimelineText>
                 }
                 headShape={"circle"}
                 headSize={5}
                 headColor={"white"}
+                showHead={!matches}
               />
             </TimelineContainer>
             <List
