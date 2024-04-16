@@ -1,10 +1,12 @@
+import { ItemDescritivo } from "./styles";
+
 function List({ descricao }: { descricao: string }) {
   const descricaoFormatada = descricao.split(";");
   return (
     <ul>
       {descricaoFormatada.map((desc) => {
         if (desc.length === 0) return;
-        return <li key={desc}>{`${desc};`}</li>;
+        return <ItemDescritivo key={desc}>{`${desc};`}</ItemDescritivo>;
       })}
     </ul>
   );

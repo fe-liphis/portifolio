@@ -32,6 +32,7 @@ export const ExperienciasTitulo = styled.h3`
 
 export const NomeDoCargo = styled.h5`
   font-size: ${({ theme }) => theme.sizes.text.default.lg};
+  color: ${({ theme }) => theme.colors.text.secondary};
   font-weight: bold;
 `;
 
@@ -39,4 +40,10 @@ export const NomeDaEmpresa = styled.h6`
   font-size: ${({ theme }) => theme.sizes.text.default.m};
   color: ${({ theme }) => theme.colors.text.navyBlue};
   font-weight: bold;
+`;
+
+export const ItemDescritivo = styled.li`
+  color: ${({ theme }) => theme.colors.text.secondary};
+  font-size: ${({ theme }) => theme.sizes.text.default.m};
+  list-style: disc;
 `;
