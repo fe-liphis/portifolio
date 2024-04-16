@@ -1,5 +1,6 @@
 import Xarrow from "react-xarrows";
 import { Section } from "../UI/Section";
+import useMediaMatches from "./hook";
 import {
   FormacaoTitulo,
   TimelineArrowContainer,
@@ -7,7 +8,6 @@ import {
   TimelineText,
   TimelineWrapper,
 } from "./styles";
-import useMediaMatches from "./hook";
 
 function Formacao() {
   const matches = useMediaMatches("(max-width: 568px)");
