@@ -39,25 +39,51 @@ export const ExperienciasWrapper = styled.ol`
 
 export const ExperienciaContainer = styled.li`
   background-color: ${({ theme }) => theme.colors.background.quinary};
-  width: 65%;
+  width: 800px;
   padding: 60px;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 1280px) {
+    width: 650px;
+  }
+
+  @media (max-width: 1024px) {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
 `;
 
 export const NomeDoCargo = styled.h5`
   font-size: ${({ theme }) => theme.sizes.text.default.lg};
   color: ${({ theme }) => theme.colors.text.secondary};
   font-weight: bold;
+
+  @media (max-width: 1280px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.m};
+  }
 `;
 
 export const NomeDaEmpresa = styled.h6`
   font-size: ${({ theme }) => theme.sizes.text.default.m};
   color: ${({ theme }) => theme.colors.text.navyBlue};
   font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const ItemDescritivo = styled.li`
@@ -68,6 +94,15 @@ export const ItemDescritivo = styled.li`
   text-justify: inter-word;
   font-weight: 500;
   margin-bottom: 15px;
+
+  @media (max-width: 1280px) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.xx};
+    margin-bottom: 7.5px;
+  }
 `;
 
 export const DescricaoContainer = styled.section`
@@ -94,4 +129,8 @@ export const TimelineText = styled.p.attrs<{
   color: ${({ $color }) => $color && theme.colors.text[$color]};
   font-weight: ${({ $bold }) => $bold && "bold"};
   padding: ${({ $padding }) => $padding && "10px 0"};
+
+  @media (max-width: 768px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.xx};
+  }
 `;
