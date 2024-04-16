@@ -7,19 +7,10 @@ import {
   TimelineText,
   TimelineWrapper,
 } from "./styles";
-import { useEffect, useState } from "react";
+import useMediaMatches from "./hook";
 
 function Formacao() {
-  const [matches, setMatches] = useState(
-    matchMedia("(max-width: 568px)").matches
-  );
-  console.log(matches);
-
-  useEffect(() => {
-    matchMedia("(max-width: 568px)").addEventListener("change", (e) =>
-      setMatches(e.matches)
-    );
-  }, []);
+  const matches = useMediaMatches("(max-width: 568px)");
 
   return (
     <Section $bgColor="primary">
