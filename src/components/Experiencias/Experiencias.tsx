@@ -13,9 +13,18 @@ import {
   TimelineText,
 } from "./styles";
 import useMediaMatches from "../Formacao/hook";
+import { MouseEvent, useState } from "react";
 
 function Experiencias() {
   const matches = useMediaMatches("(max-width: 568px)");
+
+  const [modalIsVisible, setModalIsVisible] = useState(false);
+
+  function handleOnClick(
+    _: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>
+  ) {
+    setModalIsVisible((prevState) => !prevState);
+  }
 
   return (
     <Section $bgColor="secondary">
@@ -57,7 +66,8 @@ function Experiencias() {
               Estudos para a realização da prova de Certificação de Cloud Practitioner da AWS;"
             />
           </DescricaoContainer>
-          <Button>Ver Descricao</Button>
+          <Button onClick={handleOnClick}>Ver Descricao</Button>
+          {modalIsVisible}
         </ExperienciaContainer>
       </ExperienciasWrapper>
     </Section>
