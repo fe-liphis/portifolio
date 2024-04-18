@@ -125,6 +125,30 @@ export const ItemDescritivo = styled.li`
     font-size: ${({ theme }) => theme.sizes.text.default.xx};
     margin-bottom: 7.5px;
   }
+
+  @media (max-width: 568px) {
+    font-size: 16px;
+    color: ${({ theme }) => theme.colors.text.principal};
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 12px;
+  }
+`;
+
+export const DescricaoItemsContainer = styled.ul.attrs<{
+  $visibility: boolean;
+}>(({ $visibility }) => ({
+  $visibility: $visibility,
+}))`
+  @media (max-width: 568px) {
+    display: ${({ $visibility }) => ($visibility ? "block" : "none")};
+  }
 `;
 
 export const DescricaoContainer = styled.section`
@@ -171,16 +195,6 @@ export const TimelineText = styled.p.attrs<{
   @media (max-width: 568px) {
     display: ${({ $timelineLabel }) => $timelineLabel && "none"};
     padding: ${({ $padding }) => $padding && "0 10px"};
-  }
-`;
-
-export const DescricaoItemsContainer = styled.ul.attrs<{
-  $visibility: boolean;
-}>(({ $visibility }) => ({
-  $visibility: $visibility,
-}))`
-  @media (max-width: 568px) {
-    display: ${({ $visibility }) => ($visibility ? "block" : "none")};
   }
 `;
 
