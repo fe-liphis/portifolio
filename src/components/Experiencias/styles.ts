@@ -169,7 +169,7 @@ export const TimelineText = styled.p.attrs<{
   }
 
   @media (max-width: 568px) {
-    padding-top: ${({ $timelineLabel }) => $timelineLabel && "50px"};
+    display: ${({ $timelineLabel }) => $timelineLabel && "none"};
     padding: ${({ $padding }) => $padding && "0 10px"};
   }
 `;
@@ -177,5 +177,17 @@ export const TimelineText = styled.p.attrs<{
 export const DescricaoItemsContainer = styled.ul`
   @media (max-width: 568px) {
     display: none;
+  }
+`;
+
+export const Button = styled.button`
+  display: none;
+  font-size: ${({ theme }) => theme.sizes.text.default.x};
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+
+  @media (max-width: 568px) {
+    display: block;
   }
 `;

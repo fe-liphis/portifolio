@@ -2,6 +2,7 @@ import Xarrow from "react-xarrows";
 import { Section } from "../UI/Section";
 import List from "./List";
 import {
+  Button,
   DescricaoContainer,
   ExperienciaContainer,
   ExperienciasTitulo,
@@ -56,6 +57,7 @@ function Experiencias() {
               Estudos para a realização da prova de Certificação de Cloud Practitioner da AWS;"
             />
           </DescricaoContainer>
+          <Button>Ver Descricao</Button>
         </ExperienciaContainer>
       </ExperienciasWrapper>
     </Section>
