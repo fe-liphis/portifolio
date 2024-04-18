@@ -1,9 +1,15 @@
 import { DescricaoItemsContainer, ItemDescritivo } from "./styles";
 
-function List({ descricao }: { descricao: string }) {
+function List({
+  descricao,
+  modalVisibility,
+}: {
+  descricao: string;
+  modalVisibility?: boolean;
+}) {
   const descricaoFormatada = descricao.split(";");
   return (
-    <DescricaoItemsContainer>
+    <DescricaoItemsContainer $visibility={modalVisibility || false}>
       {descricaoFormatada.map((desc) => {
         if (desc.length === 0) return;
         return <ItemDescritivo key={desc}>{`${desc};`}</ItemDescritivo>;

@@ -174,9 +174,13 @@ export const TimelineText = styled.p.attrs<{
   }
 `;
 
-export const DescricaoItemsContainer = styled.ul`
+export const DescricaoItemsContainer = styled.ul.attrs<{
+  $visibility: boolean;
+}>(({ $visibility }) => ({
+  $visibility: $visibility,
+}))`
   @media (max-width: 568px) {
-    display: none;
+    display: ${({ $visibility }) => ($visibility ? "block" : "none")};
   }
 `;
 
