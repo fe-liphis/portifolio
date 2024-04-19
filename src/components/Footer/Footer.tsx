@@ -5,6 +5,7 @@ import {
   FooterNav,
   FooterParagraph,
   FooterTitulo,
+  LinkHTML,
 } from "./styles";
 
 function Footer() {
@@ -12,23 +13,35 @@ function Footer() {
     <FooterContainer>
       <FooterTitulo>Links</FooterTitulo>
       <FooterNav>
-        <FooterLink href="#resumo">Resumo</FooterLink>
-        <FooterLink href="#habilidades">Habilidades</FooterLink>
-        <FooterLink href="#formacao">Formação</FooterLink>
-        <FooterLink href="#experiencias">Experiências</FooterLink>
-        <FooterLink href="#projetos">Projetos</FooterLink>
-        <FooterLink href="#contatos">Contatos</FooterLink>
+        <FooterLink to="resumo" smooth duration={500}>
+          Resumo
+        </FooterLink>
+        <FooterLink to="habilidades" smooth duration={500}>
+          Habilidades
+        </FooterLink>
+        <FooterLink to="formacao" smooth duration={500}>
+          Formação
+        </FooterLink>
+        <FooterLink to="experiencias" smooth duration={500}>
+          Experiências
+        </FooterLink>
+        <FooterLink to="projetos" smooth duration={500}>
+          Projetos
+        </FooterLink>
+        <FooterLink to="contatos" smooth duration={500}>
+          Contatos
+        </FooterLink>
       </FooterNav>
       <FooterArticle>
         <FooterParagraph>
           <strong>@2024</strong> Felipe Gabriel Costa de Oliveira
         </FooterParagraph>
-        <FooterLink
+        <LinkHTML
           href="https://github.com/fe-liphis/portifolio"
           target="_blank"
         >
           Código fonte
-        </FooterLink>
+        </LinkHTML>
       </FooterArticle>
     </FooterContainer>
   );

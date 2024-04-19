@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import { Link } from "react-scroll";
+import styled, { css } from "styled-components";
 
 export const FooterTitulo = styled.h4`
   font-size: ${({ theme }) => theme.sizes.text.title.lg};
@@ -59,14 +60,23 @@ export const FooterNav = styled.nav`
   }
 `;
 
-export const FooterLink = styled.a`
+const LinkCSS = css`
   color: ${({ theme }) => theme.colors.text.principal};
   font-size: ${({ theme }) => theme.sizes.text.default.m};
   text-decoration: none;
+  cursor: pointer;
 
   @media (max-width: 600px) {
     font-size: ${({ theme }) => theme.sizes.text.default.x};
   }
+`;
+
+export const FooterLink = styled(Link)`
+  ${LinkCSS}
+`;
+
+export const LinkHTML = styled.a`
+  ${LinkCSS}
 `;
 
 export const FooterArticle = styled.article`

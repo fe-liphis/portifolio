@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 export const HeaderContainer = styled.header`
   background-color: ${(props) => props.theme.colors.background.tertiary};
@@ -59,11 +60,12 @@ export const HeaderNav = styled.nav.attrs<{ $isOpen: boolean }>((props) => ({
   }
 `;
 
-export const HeaderLink = styled.a`
+export const HeaderLink = styled(Link)`
   font-size: ${(props) => props.theme.sizes.text.default.m};
   color: ${(props) => props.theme.colors.text.principal};
   text-decoration: none;
   font-weight: 400;
+  cursor: pointer;
 
   @media (max-width: 1400px) {
     font-size: ${({ theme }) => theme.sizes.text.default.x};
