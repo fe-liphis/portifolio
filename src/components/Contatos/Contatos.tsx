@@ -4,7 +4,7 @@ import List from "./List";
 
 function Contatos() {
   return (
-    <Section $bgColor="secondary">
+    <Section $bgColor="secondary" id="contatos">
       <ContatosTitulo>Contatos</ContatosTitulo>
       <address>
         <nav>

@@ -18,12 +18,12 @@ function Header() {
           {menuIsOpen ? "X" : "MENU"}
         </MenuButton>
         <HeaderNav $isOpen={menuIsOpen}>
-          <HeaderLink href="">Resumo</HeaderLink>
-          <HeaderLink href="">Habilidades</HeaderLink>
-          <HeaderLink href="">Formação</HeaderLink>
-          <HeaderLink href="">Experiências</HeaderLink>
-          <HeaderLink href="">Projetos</HeaderLink>
-          <HeaderLink href="">Contatos</HeaderLink>
+          <HeaderLink href="#resumo">Resumo</HeaderLink>
+          <HeaderLink href="#habilidades">Habilidades</HeaderLink>
+          <HeaderLink href="#formacao">Formação</HeaderLink>
+          <HeaderLink href="#experiencias">Experiências</HeaderLink>
+          <HeaderLink href="#projetos">Projetos</HeaderLink>
+          <HeaderLink href="#contatos">Contatos</HeaderLink>
         </HeaderNav>
       </HeaderContainer>
     </>

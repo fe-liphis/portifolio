@@ -13,7 +13,7 @@ function Formacao() {
   const matches = useMediaMatches("(max-width: 568px)");
 
   return (
-    <Section $bgColor="primary">
+    <Section $bgColor="primary" id="formacao">
       <FormacaoTitulo>Formação</FormacaoTitulo>
       <TimelineWrapper>
         <TimelineDescriptionContainer>

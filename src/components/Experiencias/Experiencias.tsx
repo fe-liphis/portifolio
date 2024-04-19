@@ -26,7 +26,7 @@ function Experiencias() {
   }
 
   return (
-    <Section $bgColor="secondary">
+    <Section $bgColor="secondary" id="experiencias">
       <ExperienciasTitulo>Experiências</ExperienciasTitulo>
       <ExperienciasWrapper>
         <ExperienciaContainer>
@@ -75,7 +75,7 @@ function Experiencias() {
               Construir aplicações com React utilizando Redux e rotas inteligentes com React Router;
               Construir testes unitários utilizando Vitest e Jest e entender como funciona TDD;
               Estudos para a realização da prova de Certificação de Cloud Practitioner da AWS;"
-              modalVisibility
+                modalVisibility
               />
             </Modal>
           )}

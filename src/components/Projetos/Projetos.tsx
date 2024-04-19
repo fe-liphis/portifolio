@@ -4,7 +4,7 @@ import { ProjetosTitulo } from "./styles";
 
 function Projetos() {
   return (
-    <Section $bgColor="primary">
+    <Section $bgColor="primary" id="projetos">
       <ProjetosTitulo>Projetos</ProjetosTitulo>
       <List />
     </Section>
