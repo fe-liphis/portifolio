@@ -13,22 +13,22 @@ function Footer() {
     <FooterContainer>
       <FooterTitulo>Links</FooterTitulo>
       <FooterNav>
-        <FooterLink to="resumo" smooth duration={500}>
+        <FooterLink to="resumo" smooth duration={500} offset={-70}>
           Resumo
         </FooterLink>
-        <FooterLink to="habilidades" smooth duration={500}>
+        <FooterLink to="habilidades" smooth duration={500} offset={-70}>
           Habilidades
         </FooterLink>
-        <FooterLink to="formacao" smooth duration={500}>
+        <FooterLink to="formacao" smooth duration={500} offset={-70}>
           Formação
         </FooterLink>
-        <FooterLink to="experiencias" smooth duration={500}>
+        <FooterLink to="experiencias" smooth duration={500} offset={-70}>
           Experiências
         </FooterLink>
-        <FooterLink to="projetos" smooth duration={500}>
+        <FooterLink to="projetos" smooth duration={500} offset={-70}>
           Projetos
         </FooterLink>
-        <FooterLink to="contatos" smooth duration={500}>
+        <FooterLink to="contatos" smooth duration={500} offset={-70}>
           Contatos
         </FooterLink>
       </FooterNav>

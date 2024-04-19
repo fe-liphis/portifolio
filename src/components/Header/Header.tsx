@@ -18,22 +18,22 @@ function Header() {
           {menuIsOpen ? "X" : "MENU"}
         </MenuButton>
         <HeaderNav $isOpen={menuIsOpen}>
-          <HeaderLink to="resumo" smooth duration={500}>
+          <HeaderLink to="resumo" smooth duration={500} offset={-70}>
             Resumo
           </HeaderLink>
-          <HeaderLink to="habilidades" smooth duration={500}>
+          <HeaderLink to="habilidades" smooth duration={500} offset={-70}>
             Habilidades
           </HeaderLink>
-          <HeaderLink to="formacao" smooth duration={500}>
+          <HeaderLink to="formacao" smooth duration={500} offset={-70}>
             Formação
           </HeaderLink>
-          <HeaderLink to="experiencias" smooth duration={500}>
+          <HeaderLink to="experiencias" smooth duration={500} offset={-70}>
             Experiências
           </HeaderLink>
-          <HeaderLink to="projetos" smooth duration={500}>
+          <HeaderLink to="projetos" smooth duration={500} offset={-70}>
             Projetos
           </HeaderLink>
-          <HeaderLink to="contatos" smooth duration={500}>
+          <HeaderLink to="contatos" smooth duration={500} offset={-70}>
             Contatos
           </HeaderLink>
         </HeaderNav>
