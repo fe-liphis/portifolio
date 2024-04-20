@@ -18,22 +18,64 @@ function Header() {
           {menuIsOpen ? "X" : "MENU"}
         </MenuButton>
         <HeaderNav $isOpen={menuIsOpen}>
-          <HeaderLink to="resumo" smooth duration={500} offset={-70}>
+          <HeaderLink
+            to="resumo"
+            smooth
+            duration={500}
+            offset={-70}
+            activeClass="active"
+            spy
+          >
             Resumo
           </HeaderLink>
-          <HeaderLink to="habilidades" smooth duration={500} offset={-70}>
+          <HeaderLink
+            to="habilidades"
+            smooth
+            duration={500}
+            offset={-70}
+            activeClass="active"
+            spy
+          >
             Habilidades
           </HeaderLink>
-          <HeaderLink to="formacao" smooth duration={500} offset={-70}>
+          <HeaderLink
+            to="formacao"
+            smooth
+            duration={500}
+            offset={-70}
+            activeClass="active"
+            spy
+          >
             Formação
           </HeaderLink>
-          <HeaderLink to="experiencias" smooth duration={500} offset={-70}>
+          <HeaderLink
+            to="experiencias"
+            smooth
+            duration={500}
+            offset={-70}
+            activeClass="active"
+            spy
+          >
             Experiências
           </HeaderLink>
-          <HeaderLink to="projetos" smooth duration={500} offset={-70}>
+          <HeaderLink
+            to="projetos"
+            smooth
+            duration={500}
+            offset={-70}
+            activeClass="active"
+            spy
+          >
             Projetos
           </HeaderLink>
-          <HeaderLink to="contatos" smooth duration={500} offset={-70}>
+          <HeaderLink
+            to="contatos"
+            smooth
+            duration={500}
+            offset={-70}
+            activeClass="active"
+            spy
+          >
             Contatos
           </HeaderLink>
         </HeaderNav>

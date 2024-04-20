@@ -66,6 +66,12 @@ export const HeaderLink = styled(Link)`
   text-decoration: none;
   font-weight: 400;
   cursor: pointer;
+  transition: color 0.5s, font-weight 0.5s;
+
+  &.active {
+    color: ${(props) => props.theme.colors.text.orange};
+    font-weight: bold;
+  }
 
   @media (max-width: 1400px) {
     font-size: ${({ theme }) => theme.sizes.text.default.x};
