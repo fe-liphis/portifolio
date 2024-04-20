@@ -703,6 +703,12 @@ function print() { __p += __j.call(arguments, '') }
   text-decoration: none;
   font-weight: 400;
   cursor: pointer;
+  transition: color 0.5s, font-weight 0.5s;
+
+  &.active {
+    color: ${e=>e.theme.colors.text.orange};
+    font-weight: bold;
+  }
 
   @media (max-width: 1400px) {
     font-size: ${({theme:e})=>e.sizes.text.default.x};
@@ -738,7 +744,7 @@ function print() { __p += __j.call(arguments, '') }
   @media (max-width: 700px) {
     font-size: ${e=>e.theme.sizes.text.default.x};
   }
-`;function XL(){const[e,t]=gt.useState(!1);function n(){t(o=>!o)}return F.jsx(F.Fragment,{children:F.jsxs(WL,{children:[F.jsx(GL,{onClick:n,$color:e?"#FFDC57":void 0,children:e?"X":"MENU"}),F.jsxs(UL,{$isOpen:e,children:[F.jsx(Io,{to:"resumo",smooth:!0,duration:500,offset:-70,children:"Resumo"}),F.jsx(Io,{to:"habilidades",smooth:!0,duration:500,offset:-70,children:"Habilidades"}),F.jsx(Io,{to:"formacao",smooth:!0,duration:500,offset:-70,children:"Formação"}),F.jsx(Io,{to:"experiencias",smooth:!0,duration:500,offset:-70,children:"Experiências"}),F.jsx(Io,{to:"projetos",smooth:!0,duration:500,offset:-70,children:"Projetos"}),F.jsx(Io,{to:"contatos",smooth:!0,duration:500,offset:-70,children:"Contatos"})]})]})})}const VL="/assets/projeto-1-BHjjo3VF.png",QL="/assets/projeto-2-DT8T_Xtm.png",KL="/assets/projeto-3-DUC93QqQ.png",YL=re.h3`
+`;function XL(){const[e,t]=gt.useState(!1);function n(){t(o=>!o)}return F.jsx(F.Fragment,{children:F.jsxs(WL,{children:[F.jsx(GL,{onClick:n,$color:e?"#FFDC57":void 0,children:e?"X":"MENU"}),F.jsxs(UL,{$isOpen:e,children:[F.jsx(Io,{to:"resumo",smooth:!0,duration:500,offset:-70,activeClass:"active",spy:!0,children:"Resumo"}),F.jsx(Io,{to:"habilidades",smooth:!0,duration:500,offset:-70,activeClass:"active",spy:!0,children:"Habilidades"}),F.jsx(Io,{to:"formacao",smooth:!0,duration:500,offset:-70,activeClass:"active",spy:!0,children:"Formação"}),F.jsx(Io,{to:"experiencias",smooth:!0,duration:500,offset:-70,activeClass:"active",spy:!0,children:"Experiências"}),F.jsx(Io,{to:"projetos",smooth:!0,duration:500,offset:-70,activeClass:"active",spy:!0,children:"Projetos"}),F.jsx(Io,{to:"contatos",smooth:!0,duration:500,offset:-70,activeClass:"active",spy:!0,children:"Contatos"})]})]})})}const VL="/assets/projeto-1-BHjjo3VF.png",QL="/assets/projeto-2-DT8T_Xtm.png",KL="/assets/projeto-3-DUC93QqQ.png",YL=re.h3`
   font-size: ${({theme:e})=>e.sizes.text.title.lg};
   font-weight: bold;
   color: ${({theme:e})=>e.colors.text.principal};
