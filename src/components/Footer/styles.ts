@@ -69,6 +69,10 @@ const LinkCSS = css`
   @media (max-width: 600px) {
     font-size: ${({ theme }) => theme.sizes.text.default.x};
   }
+
+  @media (max-width: 425px) {
+    font-size: ${({ theme }) => theme.sizes.text.default.xx};
+  }
 `;
 
 export const FooterLink = styled(Link)`
@@ -77,6 +81,9 @@ export const FooterLink = styled(Link)`
 
 export const LinkHTML = styled.a`
   ${LinkCSS}
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  line-height: 30px;
 `;
 
 export const FooterArticle = styled.article`
@@ -86,16 +93,6 @@ export const FooterArticle = styled.article`
   border-top: 2px solid white;
   padding-top: 20px;
   gap: 25px;
-
-  a {
-    @media (max-width: 768px) {
-      font-size: ${({ theme }) => theme.sizes.text.default.x};
-    }
-
-    @media (max-width: 425px) {
-      font-size: ${({ theme }) => theme.sizes.text.default.xx};
-    }
-  }
 `;
 
 export const FooterParagraph = styled.p`

@@ -43,6 +43,9 @@ function Footer() {
           Código fonte
         </LinkHTML>
       </FooterArticle>
+      <LinkHTML target="_blank" href="https://www.flaticon.com/">
+        Icons by Flaticon
+      </LinkHTML>
     </FooterContainer>
   );
 }
