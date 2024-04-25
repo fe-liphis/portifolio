@@ -446,6 +446,7 @@ function print() { __p += __j.call(arguments, '') }
   text-decoration: underline;
   text-underline-offset: 4px;
   line-height: 30px;
+  width: fit-content;
 `,vL=re.article`
   display: flex;
   align-items: center;
