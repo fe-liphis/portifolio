@@ -84,6 +84,7 @@ export const LinkHTML = styled.a`
   text-decoration: underline;
   text-underline-offset: 4px;
   line-height: 30px;
+  width: fit-content;
 `;
 
 export const FooterArticle = styled.article`
